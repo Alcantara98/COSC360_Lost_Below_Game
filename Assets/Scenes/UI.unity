@@ -801,7 +801,7 @@ PrefabInstance:
     - target: {fileID: -8626633859452142249, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: turnSpeed
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1752606079294819716, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
@@ -826,8 +826,28 @@ PrefabInstance:
     - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
+        type: 3}
+      propertyPath: chaseSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
+        type: 3}
+      propertyPath: startChaseRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
+        type: 3}
+      propertyPath: stopChaseRadius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 1246317918}
     - target: {fileID: 1752606079294819721, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: m_Name
@@ -1262,6 +1282,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 808044659430684841, guid: 9ea0db3bb44de4a8486777c9e6a5622d,
     type: 3}
   m_PrefabInstance: {fileID: 1446291878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1246317918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 808044659430684840, guid: 9ea0db3bb44de4a8486777c9e6a5622d,
+    type: 3}
+  m_PrefabInstance: {fileID: 252550187}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1268028006 stripped
 Transform:
