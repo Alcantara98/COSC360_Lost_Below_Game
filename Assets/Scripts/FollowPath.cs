@@ -55,10 +55,10 @@ public class FollowPath : MonoBehaviour
                 }
 
                 transform.rotation = Quaternion.Slerp(transform.rotation,
-                                Quaternion.Euler(0, 0, targetAngle),
+                                Quaternion.Euler(0, 0, targetAngle + 90),
                                 turnSpeed * Time.deltaTime);
 
-                transform.Translate(Vector3.down * speed * Time.deltaTime);
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
             }
             else
             {
