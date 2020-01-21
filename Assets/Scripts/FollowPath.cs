@@ -2,14 +2,10 @@
 
 public class FollowPath : MonoBehaviour
 {
-
+    public static bool followPath;
     // Array of waypoints to walk from one to the next one
     [SerializeField]
-    private Transform[] waypoints;
-
-    // Walk speed that can be set in Inspector
-    [SerializeField]
-    private float moveSpeed = 2f;
+    private Transform[] waypoints = null;
 
     public float speed;
 
@@ -23,7 +19,7 @@ public class FollowPath : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-
+        followPath = true;
         // Set position of Enemy as position of the first waypoint
         //transform.position = waypoints[waypointIndex].transform.position;
     }
@@ -31,9 +27,11 @@ public class FollowPath : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-
-        // Move Enemy
-        Move();
+        if (followPath == true)
+        {
+            // Move Enemy
+            Move();
+        }
     }
 
     // Method that actually make Enemy walk
@@ -61,23 +59,6 @@ public class FollowPath : MonoBehaviour
                                 turnSpeed * Time.deltaTime);
 
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
-
-                // Move Enemy from current waypoint to the next one
-                // using MoveTowards method
-                /*transform.position = Vector2.MoveTowards(transform.position,
-                   waypoints[waypointIndex].transform.position,
-                   moveSpeed * Time.deltaTime);
-                */
-
-
-                // If Enemy reaches position of waypoint he walked towards
-                // then waypointIndex is increased by 1
-                // and Enemy starts to walk to the next waypoint
-                /*if (transform.position == waypoints[waypointIndex].transform.position)
-                {
-                    waypointIndex += 1;
-                }
-                */
             }
             else
             {
@@ -85,13 +66,13 @@ public class FollowPath : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D waypoint)
+
+    // if current waypoint is reached, move to the next one
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Hello");
-        if (waypoint.gameObject.tag == "Waypoint")
+        if (collision.gameObject.tag == "Waypoint")
         {
             waypointIndex += 1;
-            Debug.Log("Hello");
         }
     }
 }
