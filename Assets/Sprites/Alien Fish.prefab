@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1752606079294819717}
   - component: {fileID: 1752606079294819716}
   - component: {fileID: -8626633859452142249}
+  - component: {fileID: 4640726083582248457}
   m_Layer: 0
   m_Name: Alien Fish
   m_TagString: Untagged
@@ -127,3 +128,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   moveSpeed: 2
+  speed: 0
+  turnSpeed: 0
+--- !u!58 &4640726083582248457
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752606079294819721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.18
