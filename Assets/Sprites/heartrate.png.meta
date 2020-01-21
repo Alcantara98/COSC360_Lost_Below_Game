@@ -1,0 +1,3523 @@
+fileFormatVersion: 2
+guid: bfcd4aefbcb704defb2a6dacfade58a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8861294104680767368
+    second: heartrate_0
+  - first:
+      213: -2591737925928095868
+    second: heartrate_1
+  - first:
+      213: 534094069655899943
+    second: heartrate_2
+  - first:
+      213: 5103140960554064556
+    second: heartrate_3
+  - first:
+      213: -4848466369747335568
+    second: heartrate_4
+  - first:
+      213: 3018744739476753864
+    second: heartrate_5
+  - first:
+      213: -692989529478624671
+    second: heartrate_6
+  - first:
+      213: -6114871213765022244
+    second: heartrate_7
+  - first:
+      213: 7939968798100006573
+    second: heartrate_8
+  - first:
+      213: 3340879867870439769
+    second: heartrate_9
+  - first:
+      213: -3366344205383294874
+    second: heartrate_10
+  - first:
+      213: 2702395937799029581
+    second: heartrate_11
+  - first:
+      213: -9206399382917871999
+    second: heartrate_12
+  - first:
+      213: -4043102777481778140
+    second: heartrate_13
+  - first:
+      213: 5491005782501037362
+    second: heartrate_14
+  - first:
+      213: -8955489849194870506
+    second: heartrate_15
+  - first:
+      213: -145185590688326949
+    second: heartrate_16
+  - first:
+      213: 7663124155096356097
+    second: heartrate_17
+  - first:
+      213: 5177341417523659052
+    second: heartrate_18
+  - first:
+      213: -4695466219635366514
+    second: heartrate_19
+  - first:
+      213: -5400262082568163821
+    second: heartrate_20
+  - first:
+      213: -3104908067903425649
+    second: heartrate_21
+  - first:
+      213: -5654472664162163738
+    second: heartrate_22
+  - first:
+      213: -3859628287611393142
+    second: heartrate_23
+  - first:
+      213: -8144730404486476780
+    second: heartrate_24
+  - first:
+      213: 5910592462739302450
+    second: heartrate_25
+  - first:
+      213: 7490994627390095498
+    second: heartrate_26
+  - first:
+      213: -7355395347584487722
+    second: heartrate_27
+  - first:
+      213: 2096077233544480834
+    second: heartrate_28
+  - first:
+      213: -5733439834615585971
+    second: heartrate_29
+  - first:
+      213: -4050025785332902817
+    second: heartrate_30
+  - first:
+      213: -2999309517792288132
+    second: heartrate_31
+  - first:
+      213: 3823851652904610765
+    second: heartrate_32
+  - first:
+      213: 6820215903712544618
+    second: heartrate_33
+  - first:
+      213: -2879605285444870182
+    second: heartrate_34
+  - first:
+      213: 3113284221853806829
+    second: heartrate_35
+  - first:
+      213: -2471922094997338763
+    second: heartrate_36
+  - first:
+      213: -5063112508184245868
+    second: heartrate_37
+  - first:
+      213: 6476332413049000921
+    second: heartrate_38
+  - first:
+      213: 1725603062089349281
+    second: heartrate_39
+  - first:
+      213: -3565680587822555509
+    second: heartrate_40
+  - first:
+      213: -4451465807820678550
+    second: heartrate_41
+  - first:
+      213: 7776372662812748267
+    second: heartrate_42
+  - first:
+      213: 7470779866167836199
+    second: heartrate_43
+  - first:
+      213: 4308539523426049409
+    second: heartrate_44
+  - first:
+      213: -5320501600517302106
+    second: heartrate_45
+  - first:
+      213: 1419964688773716790
+    second: heartrate_46
+  - first:
+      213: 6107804706104730712
+    second: heartrate_47
+  - first:
+      213: 4544413543830483342
+    second: heartrate_48
+  - first:
+      213: 4196252316289941299
+    second: heartrate_49
+  - first:
+      213: 6769214556674646315
+    second: heartrate_50
+  - first:
+      213: -3200547262714134650
+    second: heartrate_51
+  - first:
+      213: -1884798998801682401
+    second: heartrate_52
+  - first:
+      213: -5028941390550862744
+    second: heartrate_53
+  - first:
+      213: -3966570082234630374
+    second: heartrate_54
+  - first:
+      213: 2204311005273875792
+    second: heartrate_55
+  - first:
+      213: -2205611678150083360
+    second: heartrate_56
+  - first:
+      213: -3845956819127940283
+    second: heartrate_57
+  - first:
+      213: -5354633013351297202
+    second: heartrate_58
+  - first:
+      213: 5121972618548810267
+    second: heartrate_59
+  - first:
+      213: 1288882424244868159
+    second: heartrate_60
+  - first:
+      213: -3780826042012460663
+    second: heartrate_61
+  - first:
+      213: 4848939455289849139
+    second: heartrate_62
+  - first:
+      213: -3597620912940319748
+    second: heartrate_63
+  - first:
+      213: -8846395656718468633
+    second: heartrate_64
+  - first:
+      213: -3209127219978145033
+    second: heartrate_65
+  - first:
+      213: 8849417858349673697
+    second: heartrate_66
+  - first:
+      213: 6799048840082066812
+    second: heartrate_67
+  - first:
+      213: 326324609541190871
+    second: heartrate_68
+  - first:
+      213: 5636220182634403546
+    second: heartrate_69
+  - first:
+      213: 2244387549678294545
+    second: heartrate_70
+  - first:
+      213: 5642410534606260340
+    second: heartrate_71
+  - first:
+      213: -3821660846103884691
+    second: heartrate_72
+  - first:
+      213: -4619236071649226091
+    second: heartrate_73
+  - first:
+      213: 5411700321876380512
+    second: heartrate_74
+  - first:
+      213: 5289351416688648841
+    second: heartrate_75
+  - first:
+      213: 1650772499941162387
+    second: heartrate_76
+  - first:
+      213: -9005894658415766644
+    second: heartrate_77
+  - first:
+      213: -7588960826235410672
+    second: heartrate_78
+  - first:
+      213: -6664546505015665179
+    second: heartrate_79
+  - first:
+      213: -1730023907915701858
+    second: heartrate_80
+  - first:
+      213: -4350503487348930911
+    second: heartrate_81
+  - first:
+      213: -7783376407682297918
+    second: heartrate_82
+  - first:
+      213: 8032506065281643407
+    second: heartrate_83
+  - first:
+      213: -6733527533435338272
+    second: heartrate_84
+  - first:
+      213: -1139559577481402402
+    second: heartrate_85
+  - first:
+      213: -2726972687427392465
+    second: heartrate_86
+  - first:
+      213: -8164255312657600898
+    second: heartrate_87
+  - first:
+      213: -6325825776033654242
+    second: heartrate_88
+  - first:
+      213: 1268307539115220708
+    second: heartrate_89
+  - first:
+      213: 7189832603126897846
+    second: heartrate_90
+  - first:
+      213: 7931653734458476461
+    second: heartrate_91
+  - first:
+      213: 7374990928570266677
+    second: heartrate_92
+  - first:
+      213: 4407170031956377381
+    second: heartrate_93
+  - first:
+      213: -2678357954272630834
+    second: heartrate_94
+  - first:
+      213: -633770890100793188
+    second: heartrate_95
+  - first:
+      213: 976111805911197305
+    second: heartrate_96
+  - first:
+      213: 619925374007786751
+    second: heartrate_97
+  - first:
+      213: 2593911132886283259
+    second: heartrate_98
+  - first:
+      213: -8380800977160536771
+    second: heartrate_99
+  - first:
+      213: -5521832261270585340
+    second: heartrate_100
+  - first:
+      213: 3896366509866885964
+    second: heartrate_101
+  - first:
+      213: 2474295982957525521
+    second: heartrate_102
+  - first:
+      213: -8423282522495116960
+    second: heartrate_103
+  - first:
+      213: 1360508316939576598
+    second: heartrate_104
+  - first:
+      213: -9006004559282830783
+    second: heartrate_105
+  - first:
+      213: -7286193711314065379
+    second: heartrate_106
+  - first:
+      213: 5419938878899172300
+    second: heartrate_107
+  - first:
+      213: 4772648848068952264
+    second: heartrate_108
+  - first:
+      213: 8107042084970172079
+    second: heartrate_109
+  - first:
+      213: 6844986162587632319
+    second: heartrate_110
+  - first:
+      213: -7915798000745367494
+    second: heartrate_111
+  - first:
+      213: -6338788814555676331
+    second: heartrate_112
+  - first:
+      213: -7158371599538327311
+    second: heartrate_113
+  - first:
+      213: -7560970887755939828
+    second: heartrate_114
+  - first:
+      213: -6971487167984559175
+    second: heartrate_115
+  - first:
+      213: -4018516478419734261
+    second: heartrate_116
+  - first:
+      213: 1851549094026895923
+    second: heartrate_117
+  - first:
+      213: -7159953812682208682
+    second: heartrate_118
+  - first:
+      213: 5271495658076642676
+    second: heartrate_119
+  - first:
+      213: 4412951958530962402
+    second: heartrate_120
+  - first:
+      213: -5378154618690683919
+    second: heartrate_121
+  - first:
+      213: -7128669800844098001
+    second: heartrate_122
+  - first:
+      213: 6931299227627110777
+    second: heartrate_123
+  - first:
+      213: -5879749862898091802
+    second: heartrate_124
+  - first:
+      213: 3034829896421671759
+    second: heartrate_125
+  - first:
+      213: 6151332953499075677
+    second: heartrate_126
+  - first:
+      213: -4323935041270233521
+    second: heartrate_127
+  - first:
+      213: 194905205772996743
+    second: heartrate_128
+  - first:
+      213: -9101369502493174889
+    second: heartrate_129
+  - first:
+      213: -296978204714617469
+    second: heartrate_130
+  - first:
+      213: 7656208220389394867
+    second: heartrate_131
+  - first:
+      213: -1840048645354191248
+    second: heartrate_132
+  - first:
+      213: 3431708934897278324
+    second: heartrate_133
+  - first:
+      213: 8765970603198678127
+    second: heartrate_134
+  - first:
+      213: -5267440317887021922
+    second: heartrate_135
+  - first:
+      213: -7509131127950431595
+    second: heartrate_136
+  - first:
+      213: 734795137863771761
+    second: heartrate_137
+  - first:
+      213: -5966775068271979083
+    second: heartrate_138
+  - first:
+      213: 4000243570805785624
+    second: heartrate_139
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heartrate_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3807
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8796c83ad9a74c94824235101e8098d
+      internalID: 8861294104680767368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3807
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a6a06982bdc485da2dcafbc3d3f647
+      internalID: -2591737925928095868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3807
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f7c22ac26bd46aca3a69b02a3a714a
+      internalID: 534094069655899943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3807
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54cea73ba0ff4ca1976e99cd0dc79d8
+      internalID: 5103140960554064556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3807
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e896327c2a743491cb7e3403154219f0
+      internalID: -4848466369747335568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3671
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf5bc18176b745fc94fc6bae787d05a
+      internalID: 3018744739476753864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3671
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e3a3ce2e6ff4bafb17aadcc1c71da2
+      internalID: -692989529478624671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_7
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3671
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4471b71ea1684c9cb16bb0912ae4339
+      internalID: -6114871213765022244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3671
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101852387c52f4a1e862015fd8d9801b
+      internalID: 7939968798100006573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3671
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1519bbe3317ea43e79c529b345cb8474
+      internalID: 3340879867870439769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3535
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdce2e8405f1458683e8e2b9b6c47bf
+      internalID: -3366344205383294874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3535
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050280e0db9414aeca7f7d05dfd2b950
+      internalID: 2702395937799029581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_12
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3535
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a980bfc4ac69a4772a0f98c6cbde2d81
+      internalID: -9206399382917871999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_13
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3535
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bbd6ba911a94bacb3668c42fd1576a
+      internalID: -4043102777481778140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_14
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3535
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0e4d2ac3f85440cba11dae24d554ed
+      internalID: 5491005782501037362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3399
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0a8ae57aaa94f998ed344476b14a39
+      internalID: -8955489849194870506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_16
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3399
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d7eba7bcce04950b366f0d7b601e26
+      internalID: -145185590688326949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_17
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3399
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8471882ff49f4bc4b188e15d8e7c162
+      internalID: 7663124155096356097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_18
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3399
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ce2d922efb44cdabb4649bfb52e50d
+      internalID: 5177341417523659052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_19
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3399
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de929d336b6246e8a5dc0ec6d218e92
+      internalID: -4695466219635366514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3263
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a57e278c33a24e93821c99a3242e847
+      internalID: -5400262082568163821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_21
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3263
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827ac73cb1da7423783ded9a00f55b74
+      internalID: -3104908067903425649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_22
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3263
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811b87785f87a4675b8997f1f4a36327
+      internalID: -5654472664162163738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_23
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3263
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c07537a35034865bf031b9fe4fb35c
+      internalID: -3859628287611393142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_24
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3263
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30eedde667d74cf9a5c0e002e9972ef
+      internalID: -8144730404486476780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3127
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3690766e2d05140979de864d35ca19ed
+      internalID: 5910592462739302450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3127
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52576b6edfff541c2ad44833360470e9
+      internalID: 7490994627390095498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_27
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3127
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e9af895101c4b5e965fc85556fc199
+      internalID: -7355395347584487722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_28
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3127
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecf8496ac7354ae484b9d36a7692bfa
+      internalID: 2096077233544480834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_29
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 3127
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ffa694c69b410f9bf252336453b34
+      internalID: -5733439834615585971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2991
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b5c2200061946eaa2755c707336116
+      internalID: -4050025785332902817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_31
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2991
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdcf552976164cc6a27d950b99d8dcb
+      internalID: -2999309517792288132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_32
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2991
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fbe5115ad544de6a318071eef84730
+      internalID: 3823851652904610765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_33
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2991
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc906652e2ce4680841e1c65ad821d2
+      internalID: 6820215903712544618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_34
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2991
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061c7d331ed804c3e89904187a7c63d5
+      internalID: -2879605285444870182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2855
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc7002f7bc734e1cbf9b19caa02f5f3
+      internalID: 3113284221853806829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_36
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2855
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6318ded93b0864568bbd975b86b90792
+      internalID: -2471922094997338763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_37
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2855
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda78d8f6c08c4c13a3f1e9019f21479
+      internalID: -5063112508184245868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_38
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2855
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ffafa65419b411ea8ce3bbd249b100
+      internalID: 6476332413049000921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_39
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2855
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0158028f6d0d403fa0b497b8fa0ffa5
+      internalID: 1725603062089349281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2719
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73d21081e04b411d9c4e6fed04d8732
+      internalID: -3565680587822555509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2719
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499623951cc524ec1bf78d19f5f78c57
+      internalID: -4451465807820678550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_42
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2719
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910f5da6a21fe451181d1c58ce2e73ba
+      internalID: 7776372662812748267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_43
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2719
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880df90d006d44a9dac058a77d60d19f
+      internalID: 7470779866167836199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_44
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2719
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd58f9b744514164885dbcb3888160b
+      internalID: 4308539523426049409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2583
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c68a163f91d40c6ad4b5e578fad616
+      internalID: -5320501600517302106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_46
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2583
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a16cdb4699514bfda4e811db4dba1d5
+      internalID: 1419964688773716790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_47
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2583
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3ed7bb4af234709a1e8338f965df5e
+      internalID: 6107804706104730712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_48
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2583
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac912fcb1ed8413bb8bb22034d46998
+      internalID: 4544413543830483342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_49
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2583
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb91fb90ca1c487ebf4c4336e93070b
+      internalID: 4196252316289941299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2447
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bac2f49373949aa8f919d547ecadaf
+      internalID: 6769214556674646315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_51
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2447
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a3c8984b560403ba12719e4983fe38
+      internalID: -3200547262714134650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_52
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2447
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cfb65fb4d5e40969747a60a1ecc640
+      internalID: -1884798998801682401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_53
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2447
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4960bdb40b0491eb575935f75cd43f
+      internalID: -5028941390550862744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_54
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2447
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8f528ed7f5949cbaa15061514926ea
+      internalID: -3966570082234630374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2311
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ad4b47ffc4d4ec6b4f7c29d5d4d397
+      internalID: 2204311005273875792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_56
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2311
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2655eb55fff39491390fd65b0d7c3811
+      internalID: -2205611678150083360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_57
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2311
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d8279f2ea8c4807b9eb1429a147b60
+      internalID: -3845956819127940283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_58
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2311
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac9086213d0e4dfc8e925e7caec96b2
+      internalID: -5354633013351297202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_59
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2311
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656098085933047879300632ad8b412a
+      internalID: 5121972618548810267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2175
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93c251827fcf4901a450c743f5214fc
+      internalID: 1288882424244868159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_61
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2175
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225fb3e02f8f64d0fa1931dce840b9e6
+      internalID: -3780826042012460663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_62
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2175
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2909a394c94a64ef8a3f1250b1f72c55
+      internalID: 4848939455289849139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_63
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2175
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5986208fb815847758f616deb8ee6d7a
+      internalID: -3597620912940319748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_64
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2175
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4efbc5151d344e4bf07a75ff244b00
+      internalID: -8846395656718468633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2039
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d098f050121e42c3b7762e9d62ea715
+      internalID: -3209127219978145033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_66
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2039
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba13dcfd83764388bdd956d39f25a1b
+      internalID: 8849417858349673697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_67
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2039
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dada1e00d6d1486ea48955ca809edab
+      internalID: 6799048840082066812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_68
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2039
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4420af50897d4d21b8a3faabc3716f3
+      internalID: 326324609541190871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_69
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2039
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab98d3d281224397a91c9fcd3c75bcc
+      internalID: 5636220182634403546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1903
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cd28f47d8bd41c7b86391aadcb3cb9
+      internalID: 2244387549678294545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_71
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1903
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c8d37fddb054e98859438907589789
+      internalID: 5642410534606260340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_72
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1903
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b3f25047ecc4ed3b5f697b43204be0
+      internalID: -3821660846103884691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_73
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1903
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f228e1c9a4f4089ba6a48908857635
+      internalID: -4619236071649226091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_74
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1903
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d45b6d658506497a82891bf3874e860
+      internalID: 5411700321876380512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1767
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84095fad519cc4606ad700c709f899ce
+      internalID: 5289351416688648841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_76
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1767
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d90285033584197b0933c3c534585c
+      internalID: 1650772499941162387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_77
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1767
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9952d748a6243b8a3e28862c603527
+      internalID: -9005894658415766644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_78
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1767
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87f6005a8f0d4dd1940bd39b9c099fe
+      internalID: -7588960826235410672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_79
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1767
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fee2f8270144280be63793d0a867c5
+      internalID: -6664546505015665179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1631
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857ec56f0dd6a4f65bd0b3d7c477a242
+      internalID: -1730023907915701858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_81
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1631
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d9cc86ae4f74dfcab835c3104482b5
+      internalID: -4350503487348930911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_82
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1631
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f529ad09429402a90bbde3d0044d4e
+      internalID: -7783376407682297918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_83
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1631
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8e4a893bfc14104ace4bbcb3f1d46c
+      internalID: 8032506065281643407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_84
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1631
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8c2c3795e694194994e4f63481ba85
+      internalID: -6733527533435338272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1495
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9559a62aebe754e239554078bc4d30b3
+      internalID: -1139559577481402402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_86
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1495
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6858afbdf5d46708c6c66bd834b244
+      internalID: -2726972687427392465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_87
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1495
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62cb0277c2f04d3096bf3dc2a902c14
+      internalID: -8164255312657600898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_88
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1495
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44dab298bbcc462ca5d0df1cd2e6774
+      internalID: -6325825776033654242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_89
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1495
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d829bc5a1d5e460e90dc6ddbdf51f34
+      internalID: 1268307539115220708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1359
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9c48e6a41e24493ba58a9c1cfb2da1
+      internalID: 7189832603126897846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_91
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1359
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0014f46f8894a228fbde8deee411fc
+      internalID: 7931653734458476461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_92
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1359
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bf7dac04e1a4ccbad937144020f3f6
+      internalID: 7374990928570266677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_93
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1359
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5509ac9c797244f088be02840abf10b
+      internalID: 4407170031956377381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_94
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1359
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc2b1549af354633889e1ed0a0a283b
+      internalID: -2678357954272630834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1223
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2472b107ad94f4e8c760633353be91
+      internalID: -633770890100793188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_96
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1223
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ca21ddb8b824851b9b094040b4b681
+      internalID: 976111805911197305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_97
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1223
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6193a6230e0e427b88f44a658dfb78c
+      internalID: 619925374007786751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_98
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1223
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f075dee48ae14b4d82ffb81d8ce9e4a
+      internalID: 2593911132886283259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_99
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1223
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d2b4b2db1cc439183eff506cb776e6
+      internalID: -8380800977160536771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487a67564517c4c00a9cb6257944b27a
+      internalID: -5521832261270585340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_101
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1087
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c2c523c0d32462fac43a74bebe2a81
+      internalID: 3896366509866885964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_102
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1087
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e877d936ad3456e964035d097fc4c7
+      internalID: 2474295982957525521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_103
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1087
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6005f947994384d95a528cd2b023b2e5
+      internalID: -8423282522495116960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_104
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1087
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dfe540a195c403992cf015aa779bcf
+      internalID: 1360508316939576598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 951
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8faa98401c84f4066bc79a02f6764148
+      internalID: -9006004559282830783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_106
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 951
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a7df4e021ba446c8692fc44ddc479b
+      internalID: -7286193711314065379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_107
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 951
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fe81aee4e6c44d8ba9915d0923b99b
+      internalID: 5419938878899172300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_108
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 951
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa781da261b6e4bf0834bbdce2654e8a
+      internalID: 4772648848068952264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_109
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 951
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a639dc7bb7e4c6287b0933a565a5eb
+      internalID: 8107042084970172079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4b8c933c64340fa90e21ac64ed15c6
+      internalID: 6844986162587632319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_111
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 815
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d8a61c6a1f5416695379fc7f0659c9
+      internalID: -7915798000745367494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_112
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 815
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5f77f93fc524523b93be31be8e6606
+      internalID: -6338788814555676331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_113
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 815
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145804d71ca4f444fbc52372a3d71b35
+      internalID: -7158371599538327311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_114
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 815
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f212797b4444747e8beae3287a6cfb89
+      internalID: -7560970887755939828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 679
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b84ff6247ae4465874e1ec7c9b38af
+      internalID: -6971487167984559175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_116
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 679
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a2a054ded28440b9fd5aa1687c48ef
+      internalID: -4018516478419734261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_117
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 679
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fa53d1504534557a4148b60ab4e5ae
+      internalID: 1851549094026895923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_118
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 679
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91b980cbfb77496fb5c5cfd6dafc238
+      internalID: -7159953812682208682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_119
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 679
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9e8738fdf0f4f5a9d49fe1ba6c6755
+      internalID: 5271495658076642676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745b81c7e895641cc80c170d417a1988
+      internalID: 4412951958530962402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_121
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 543
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300fd7ff0699e4af3a1b69ef2a83b238
+      internalID: -5378154618690683919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_122
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 543
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67779c2bd879d4f9fafffc1694264897
+      internalID: -7128669800844098001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_123
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 543
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145de9d5b1ae549749ee59269e16ac97
+      internalID: 6931299227627110777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_124
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 543
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dbecf89879345a38ea3636b3c434a2
+      internalID: -5879749862898091802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750d0e187836b4e7698e22a2d4c649f4
+      internalID: 3034829896421671759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_126
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 407
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d55cfbe0a0f432ca72e9087e120bda
+      internalID: 6151332953499075677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_127
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 407
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406758c68cfa443b48e2d14f56308048
+      internalID: -4323935041270233521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_128
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 407
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a963ac6445d4494b129e14e287240b
+      internalID: 194905205772996743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_129
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 407
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef98a6f28bef4045bcf437398249588
+      internalID: -9101369502493174889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2171888ca6a9f453ba120da9db23c5a1
+      internalID: -296978204714617469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_131
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 271
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1527ef53f27204873b45b80e9476dd3c
+      internalID: 7656208220389394867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_132
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 271
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d82f1719fef4c6f9fae79996e87d01
+      internalID: -1840048645354191248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_133
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 271
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53876d71f6cb34523bf796c7bf04afa1
+      internalID: 3431708934897278324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_134
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 271
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19279cebcc84744278011921e82828fa
+      internalID: 8765970603198678127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210d79a55887b47ee917a2946690202e
+      internalID: -5267440317887021922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_136
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 135
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9779262901fa34948897092a3337be96
+      internalID: -7509131127950431595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_137
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 135
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a9ea01eaa104cbe9b1404ba2ed2481
+      internalID: 734795137863771761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_138
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 135
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4805caa58001486aa60882df2788628
+      internalID: -5966775068271979083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heartrate_139
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 135
+        width: 156
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f680bac010c4d188810e8bbd2c7a51
+      internalID: 4000243570805785624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
