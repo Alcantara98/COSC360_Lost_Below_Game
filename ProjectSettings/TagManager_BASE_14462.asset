@@ -5,10 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
-  - Current
-  - Waypoint
-  - AlienChase
-  - AlienStopChase
   layers:
   - Default
   - TransparentFX
