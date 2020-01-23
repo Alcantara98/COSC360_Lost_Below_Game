@@ -11,10 +11,10 @@ using System.Collections;
  * target game object*/
 
 public class Chase : MonoBehaviour {
-    public int startChaseRadius;
-    public int stopChaseRadius;
+    public float startChaseRadius;
+    public float stopChaseRadius;
 
-    public GameObject waypoints = null;
+    public GameObject goBackToWayPoint = null;
 
     //true if chasing, false if not
     private bool chase;
@@ -52,7 +52,7 @@ public class Chase : MonoBehaviour {
     void Update()
     {
         Vector2 player = target.transform.position;
-        Vector2 waypoint = waypoints.transform.position;
+        Vector2 waypoint = goBackToWayPoint.transform.position;
         if (chase == false && Mathf.Sqrt(Mathf.Pow(player.x - transform.position.x, 2) + Mathf.Pow(player.y - transform.position.y, 2)) < startChaseRadius)
         {
             chase = true;
@@ -63,7 +63,7 @@ public class Chase : MonoBehaviour {
         {
             chaseStop = true;
             chaseSpeed = 0;
-            pathfinder.GoTowards(waypoints, 2);
+            pathfinder.GoTowards(goBackToWayPoint, 2);
             if (Mathf.Sqrt(Mathf.Pow(waypoint.x - transform.position.x, 2) + Mathf.Pow(waypoint.y - transform.position.y, 2)) < 1)
             {
                 Debug.Log("reached waypoint");
