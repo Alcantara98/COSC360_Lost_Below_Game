@@ -6,9 +6,12 @@ public class PlayerPhysics : MonoBehaviour
 {
 
     public float speed;
+    public float initialCurrent;
     public Rigidbody2D player;
-    private Vector3 direction = Vector3.zero;
+    public float currentSpeed;
+    private Vector2 direction = Vector2.zero;
     private Vector2 movement;
+    
 
     // Update is called once per frame
     void Update()
@@ -20,7 +23,7 @@ public class PlayerPhysics : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         movement = new Vector2(horizontal, vertical);
-        player.AddForce(movement * speed);
+        player.AddForce(movement * speed * Time.deltaTime);
 
 
         /**
@@ -38,10 +41,10 @@ public class PlayerPhysics : MonoBehaviour
 
         //            
 
-        //    if (direction != )
-        //    {
-        //        movement += (direction * 5 * Time.deltaTime);
-        //    }
+        if (direction != Vector2.zero)
+        {
+            player.AddForce(direction * currentSpeed * Time.deltaTime);
+        }
 
 
         //    transform.Translate(movement);
@@ -51,16 +54,17 @@ public class PlayerPhysics : MonoBehaviour
     {
         if (collision.gameObject.tag == "Current")
         {
-            player.AddForce(collision.transform.up * 200);
+            direction = collision.transform.up;
+            //player.AddForce(direction * initialCurrent);
         }
     }
 
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Current")
-    //    {
-    //        direction = Vector2.up;
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Current")
+        {
+            direction = Vector2.zero;
 
-    //    }
-    //}
+        }
+    }
 }

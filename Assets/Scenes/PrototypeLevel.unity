@@ -2329,8 +2329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3222a5f5feff3428f85e9b1d07ffbe45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 1000
+  initialCurrent: 400
   player: {fileID: 912809968}
+  currentSpeed: 2000
 --- !u!4 &928221589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3525132629465511195, guid: a480ce41e30e82344b162b6fde22c66e,
@@ -5240,12 +5242,12 @@ PrefabInstance:
     - target: {fileID: 6317368655678681242, guid: e4569d735e6be47e583665be639d359a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.84
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 6317368655678681242, guid: e4569d735e6be47e583665be639d359a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.47
+      value: 4.36
       objectReference: {fileID: 0}
     - target: {fileID: 6317368655678681242, guid: e4569d735e6be47e583665be639d359a,
         type: 3}
