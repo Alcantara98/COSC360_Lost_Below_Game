@@ -11,7 +11,7 @@ public class PlayerPhysics : MonoBehaviour
     public float currentSpeed;
     private Vector2 direction = Vector2.zero;
     private Vector2 movement;
-    
+
 
     // Update is called once per frame
     void Update()
@@ -25,46 +25,5 @@ public class PlayerPhysics : MonoBehaviour
         movement = new Vector2(horizontal, vertical);
         player.AddForce(movement * speed * Time.deltaTime);
 
-
-        /**
-        // If close to wall and moving towards it,
-        // stop the movment
-        if (atLeftWall && (movementInput < 0))
-        {
-            movementInput = 0;
-        }
-        if (atRightWall && (movementInput > 0))
-        {
-            movementInput = 0;
-        }
-    */
-
-        //            
-
-        if (direction != Vector2.zero)
-        {
-            player.AddForce(direction * currentSpeed * Time.deltaTime);
-        }
-
-
-        //    transform.Translate(movement);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Current")
-        {
-            direction = collision.transform.up;
-            //player.AddForce(direction * initialCurrent);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Current")
-        {
-            direction = Vector2.zero;
-
-        }
-    }
-}
+} 
