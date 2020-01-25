@@ -12,6 +12,7 @@ using System.Collections;
 
 public class Chase : MonoBehaviour {
     public int startChaseRadius;
+
     public int stopChaseRadius;
 
     public GameObject waypoints = null;
