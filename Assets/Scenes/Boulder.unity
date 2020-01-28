@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 877402057}
   - component: {fileID: 877402061}
   - component: {fileID: 877402062}
+  - component: {fileID: 877402063}
   m_Layer: 0
   m_Name: Boulder Square
   m_TagString: BoulderSquare
@@ -552,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877402056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.59, y: 2.1, z: -5}
+  m_LocalPosition: {x: 3.39, y: -1.21, z: -5}
   m_LocalScale: {x: 0.5252473, y: 0.54376453, z: 1.0024}
   m_Children: []
   m_Father: {fileID: 0}
@@ -571,32 +572,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 815428881}
---- !u!61 &877402062
-BoxCollider2D:
+  boulder: {fileID: 877402058}
+--- !u!231 &877402062
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877402056}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.260073, y: -0.07700062}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 3.92}
-    newSize: {x: 6, y: 3.92}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.742642, y: 2.84198}
-  m_EdgeRadius: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 957126216}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.13567066, y: 0.91001105}
+  m_AutoConfigureDistance: 1
+  m_Distance: 2.0546463
+  m_DampingRatio: 0
+  m_Frequency: 1
+--- !u!255 &877402063
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877402056}
+  m_Enabled: 0
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3.49, y: -1.2}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &933371950
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +694,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &957126216 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4902825125455040698, guid: c4821cbdda6164076b472a0f98d7ae62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1381851329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1054701869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1038,10 @@ PrefabInstance:
       propertyPath: speedWithBoulder
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 1524153560, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
+      propertyPath: speed
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1524153564, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1038,12 +1062,12 @@ PrefabInstance:
     - target: {fileID: 4245155028685315285, guid: c4821cbdda6164076b472a0f98d7ae62,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.11
+      value: 2.05
       objectReference: {fileID: 0}
     - target: {fileID: 4245155028685315285, guid: c4821cbdda6164076b472a0f98d7ae62,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.38
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 4245155028685315285, guid: c4821cbdda6164076b472a0f98d7ae62,
         type: 3}
