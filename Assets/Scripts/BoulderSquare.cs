@@ -8,7 +8,7 @@ public class BoulderSquare : MonoBehaviour
     public Transform playerTransform;
     private float xOffset;
     private bool draggingBoulder;
-
+    PlayerPhysics pp = new PlayerPhysics();
 
     private void Start()
     {
@@ -21,7 +21,8 @@ public class BoulderSquare : MonoBehaviour
     {
         if (Math.Abs(playerTransform.position.x - this.transform.position.x) < 4 && Math.Abs(playerTransform.position.y - this.transform.position.y) < 4)
         {
-            PlayerPhysics.speed = 400;
+            
+            pp.speed = 400;
 
             if (Input.GetMouseButtonDown(0))
             {

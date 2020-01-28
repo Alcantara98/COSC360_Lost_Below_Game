@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class RefillZone : MonoBehaviour
 {
+    public static bool refilling = false;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && PlayerPhysics.TankAir < PlayerPhysics.TankSize)
+        if (collision.gameObject.tag == "Player")
         {
+            refilling = true;
             StartCoroutine("Refill");
         }
     }
@@ -16,18 +19,18 @@ public class RefillZone : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            refilling = false;
             StopCoroutine("Refill");
         }
     }
 
     IEnumerator Refill()
     {
-        for (float currentOxygen = PlayerPhysics.TankAir; currentOxygen <= PlayerPhysics.TankSize; currentOxygen += 0.05f)
+        for (float currentOxygen = PlayerOxygen.TankAir; currentOxygen <= PlayerOxygen.TankSize; currentOxygen += 0.2f)
         {
-            PlayerPhysics.TankAir = currentOxygen;
+            PlayerOxygen.TankAir = currentOxygen;
             yield return new WaitForSeconds(Time.deltaTime);
         }
-
-        PlayerPhysics.TankAir = PlayerPhysics.TankSize;
+        PlayerOxygen.TankAir = PlayerOxygen.TankSize;
     }
 }
