@@ -6,7 +6,7 @@ public class PlayerPhysics : MonoBehaviour
 {
     public static float TankSize = 30.0f;
     public static float TankAir = 10.0f;
-    public float speed;
+    public static float speed;
     public float initialCurrent;
     public Rigidbody2D player;
     public float currentSpeed;
