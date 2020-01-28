@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PlayerPhysics : MonoBehaviour
 {
-
+    public static float TankSize = 30.0f;
+    public static float TankAir = 10.0f;
     public float speed;
     public float initialCurrent;
     public Rigidbody2D player;
     public float currentSpeed;
     private Vector2 direction = Vector2.zero;
     private Vector2 movement;
-
+    //public OxygenMaster oxygen;
 
     // Update is called once per frame
     void Update()
@@ -25,5 +26,22 @@ public class PlayerPhysics : MonoBehaviour
         movement = new Vector2(horizontal, vertical);
         player.AddForce(movement * speed * Time.deltaTime);
 
+        //update players oxygen tank every frame
+        UseOxygen();
     }
+
+
+        //function to calculate players remaining oxygen in seconds
+    void UseOxygen()
+    {
+        TankAir -= Time.smoothDeltaTime;
+        Debug.Log("O2 Left: " + TankAir);
+
+        if (TankAir <= 0)
+        {
+            Debug.Log("YOUR OUT OF OXYGEN RETARD");
+            TankAir = 0.0f;
+        }
+    }
+
 } 
