@@ -9,7 +9,7 @@ TagManager:
   - Waypoint
   - AlienChase
   - AlienStopChase
-  - Refill
+  - BoulderSquare
   layers:
   - Default
   - TransparentFX
