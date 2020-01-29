@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3525132629465511192}
   - component: {fileID: 4209501069077575497}
   - component: {fileID: 2166727079734087537}
+  - component: {fileID: 2617978530958673334}
   m_Layer: 0
   m_Name: Vine
   m_TagString: Wall
@@ -129,3 +130,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.328695, y: 0.112654015}
   m_EdgeRadius: 0
+--- !u!114 &2617978530958673334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525132629465511194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d511646568e924cd6a130654892aebea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vineLifeInt: 3
