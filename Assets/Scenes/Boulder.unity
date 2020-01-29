@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -120,6 +120,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &228362024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5383319744763640820, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5383319744763640820, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2419689
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.7417249
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.99539405
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.09586889
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944296, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -168.99701
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534704424634944298, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2,
+        type: 3}
+      propertyPath: m_Name
+      value: Alien Fish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6790b1f35e35d4f4fb00c21cd0ef8ab2, type: 3}
 --- !u!1001 &641183013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,7 +671,7 @@ Transform:
   m_LocalScale: {x: 4.973, y: 4.073, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1093212312
 PrefabInstance:
@@ -604,12 +683,12 @@ PrefabInstance:
     - target: {fileID: 5689197072122345824, guid: 47fec397693a3423596ac957d5726c42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.1644745
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 5689197072122345824, guid: 47fec397693a3423596ac957d5726c42,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.017484844
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5689197072122345824, guid: 47fec397693a3423596ac957d5726c42,
         type: 3}
