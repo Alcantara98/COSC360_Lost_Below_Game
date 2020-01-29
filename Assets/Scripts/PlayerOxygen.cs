@@ -26,11 +26,11 @@ public class PlayerOxygen : MonoBehaviour
     void UseOxygen()
     {
         TankAir -= Time.smoothDeltaTime;
-        Debug.Log("O2 Left: " + TankAir);
+        //Debug.Log("O2 Left: " + TankAir);
 
         if (TankAir <= 0)
         {
-            Debug.Log("YOUR OUT OF OXYGEN RETARD");
+            //Debug.Log("YOUR OUT OF OXYGEN RETARD");
             TankAir = 0.0f;
         }
     }
