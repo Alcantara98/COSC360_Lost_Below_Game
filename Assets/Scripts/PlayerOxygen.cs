@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerOxygen : MonoBehaviour
 {
     public static float TankSize = 30.0f;
-    public static float TankAir = 10.0f;
+    public static float TankAir = 30.0f;
 
     // Start is called before the first frame update
     void Start()
