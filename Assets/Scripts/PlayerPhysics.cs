@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class PlayerPhysics : MonoBehaviour
 {
-
     public static float speed;
-    //public float speedWithBoulder;
-    //private float chosenSpeed;
     public float initialCurrent;
     public Rigidbody2D player;
-    
     public float currentSpeed;
     private Vector2 direction = Vector2.zero;
     private Vector2 movement;
+    public static bool isRightBoulder;
+    public static bool isLeftBoulder;
+    //public OxygenMaster oxygen;
 
 
     private void Start()
     {
-        speed = 1000;
-        //chosenSpeed = speed;
+        speed = 1500;
+        isRightBoulder = false;
+        isLeftBoulder = false;
     }
     // Update is called once per frame
     void Update()
@@ -30,24 +30,16 @@ public class PlayerPhysics : MonoBehaviour
 
         float vertical = Input.GetAxis("Vertical");
 
+        if(isRightBoulder && horizontal < 0)
+        {
+            horizontal = 0;
+        }else if(isLeftBoulder && horizontal > 0)
+        {
+            horizontal = 0;
+        }
+
         movement = new Vector2(horizontal, vertical);
         player.AddForce(movement * speed * Time.deltaTime);
-
     }
-
-    //private void OnTriggerEnter2D(Collider2D boulder)
-    //{
-    //    if(boulder.tag == "BoulderSquare")
-    //    {
-    //        chosenSpeed = speedWithBoulder;
-    //    }
-    //}
-
-    //private void OnTriggerExit2D(Collider2D boulder)
-    //{
-    //    if(boulder.tag == "BoulderSquare")
-    //    {
-    //        chosenSpeed = speed;
-    //    }
-    //}
+    
 } 
