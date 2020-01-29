@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerOxygen : MonoBehaviour
 {
     public static float TankSize = 30.0f;
-    public static float TankAir = 10.0f;
+    public static float TankAir = 30.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +26,11 @@ public class PlayerOxygen : MonoBehaviour
     void UseOxygen()
     {
         TankAir -= Time.smoothDeltaTime;
-        Debug.Log("O2 Left: " + TankAir);
+        //Debug.Log("O2 Left: " + TankAir);
 
         if (TankAir <= 0)
         {
-            Debug.Log("YOUR OUT OF OXYGEN RETARD");
+            //Debug.Log("YOUR OUT OF OXYGEN RETARD");
             TankAir = 0.0f;
         }
     }
