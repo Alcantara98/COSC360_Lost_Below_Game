@@ -9,6 +9,7 @@ TagManager:
   - Waypoint
   - AlienChase
   - AlienStopChase
+  - BoulderSquare
   layers:
   - Default
   - TransparentFX
