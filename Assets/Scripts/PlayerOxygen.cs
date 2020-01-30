@@ -10,7 +10,7 @@ public class PlayerOxygen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class PlayerOxygen : MonoBehaviour
         {
             UseOxygen();
         }
-        
+
     }
 
     void UseOxygen()
@@ -33,5 +33,15 @@ public class PlayerOxygen : MonoBehaviour
             //Debug.Log("YOUR OUT OF OXYGEN RETARD");
             TankAir = 0.0f;
         }
+    }
+
+    public bool DecreaseOxygen(float amt)
+    {
+        if (TankAir > amt + 2)
+        {
+            TankAir -= amt;
+            return true;
+        }
+        return false;
     }
 }
