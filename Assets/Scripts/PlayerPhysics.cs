@@ -12,18 +12,33 @@ public class PlayerPhysics : MonoBehaviour
     private Vector2 movement;
     public static bool isRightBoulder;
     public static bool isLeftBoulder;
+    public float boostSpeed;
+    public float boostCooldown;
+    float bTimer;
     //public OxygenMaster oxygen;
 
 
     private void Start()
     {
         speed = 1500;
+        bTimer = 1.0f;
         isRightBoulder = false;
         isLeftBoulder = false;
     }
     // Update is called once per frame
     void Update()
     {
+        if (bTimer > 0)
+        {
+            bTimer -= Time.deltaTime;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && bTimer <= 0) {
+            Vector2 facing = player.velocity.normalized;
+            player.AddForce(facing * boostSpeed);
+            bTimer = boostCooldown;
+            Debug.Log("Boosted");
+        }
+
         // Player movement from input (it's a variable between -1 and 1) for
         // degree of left or right movement
         float horizontal = Input.GetAxis("Horizontal");
