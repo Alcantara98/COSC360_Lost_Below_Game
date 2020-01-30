@@ -836,12 +836,12 @@ PrefabInstance:
     - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: startChaseRadius
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: stopChaseRadius
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
@@ -856,6 +856,11 @@ PrefabInstance:
     - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: SpeedWhenChasing
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752606079294819717, guid: 18059c0dd22503b4689e4829b8512cca,
+        type: 3}
+      propertyPath: SpeedGoingBack
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1752606079294819721, guid: 18059c0dd22503b4689e4829b8512cca,
@@ -1989,7 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa9642c4d6b44cd094dba9d428da0f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 3
 --- !u!212 &2077495627
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -866,6 +866,14 @@ PrefabInstance:
       propertyPath: speed
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 1524153560, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
+      propertyPath: boostSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524153560, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
+      propertyPath: boostCooldown
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1524153564, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
       propertyPath: m_IsTrigger
       value: 0
