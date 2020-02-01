@@ -135,7 +135,7 @@ PrefabInstance:
     - target: {fileID: 2617978530958673334, guid: f7269bc7589b04f0c960c3b2505db9af,
         type: 3}
       propertyPath: vineLifeInt
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3525132629465511194, guid: f7269bc7589b04f0c960c3b2505db9af,
         type: 3}
