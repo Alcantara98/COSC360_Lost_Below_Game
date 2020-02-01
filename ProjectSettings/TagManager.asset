@@ -10,6 +10,8 @@ TagManager:
   - AlienChase
   - AlienStopChase
   - BoulderSquare
+  - Knife
+  - Vine
   layers:
   - Default
   - TransparentFX

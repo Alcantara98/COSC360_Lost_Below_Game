@@ -5,17 +5,18 @@ using UnityEngine;
 public class Vine : MonoBehaviour
 {
     public int vineLifeInt = 3;
+    public GameObject knifeIcon;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,11 +24,22 @@ public class Vine : MonoBehaviour
         Debug.Log("enter collider");
         if (collision.gameObject.tag == "Player")
         {
-            vineLifeInt--;
-            Debug.Log(vineLifeInt);
-            if (vineLifeInt == 0)
+            if (knifeIcon.activeSelf == true)
             {
-                Destroy(gameObject);
+                vineLifeInt--;
+                Debug.Log(vineLifeInt);
+                if (vineLifeInt == 0)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else if (knifeIcon == null)
+            {
+                Debug.Log("No icon!");
+            }
+            else
+            {
+                Debug.Log("Hey, handsome. \n Have you seen my knife anywhere? \n Find it, dumbass!");
             }
         }
     }
