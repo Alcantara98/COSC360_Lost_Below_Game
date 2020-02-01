@@ -4,42 +4,52 @@ using UnityEngine;
 
 public class PlayerPhysics : MonoBehaviour
 {
-    public static float speed;
-    public float initialCurrent;
-    public Rigidbody2D player;
-    public float currentSpeed;
-    private Vector2 direction = Vector2.zero;
     private Vector2 movement;
-    public static bool isRightBoulder;
-    public static bool isLeftBoulder;
+    public float boostSpeed = 400;
+    public float boostCooldown = 2;
+    float bTimer;
+    public float speed = 1500;
+    public float boostCost = 5;
+    PlayerOxygen oxygen;
+    Rigidbody2D player;
     //public OxygenMaster oxygen;
 
 
     private void Start()
     {
-        speed = 1500;
-        isRightBoulder = false;
-        isLeftBoulder = false;
+        bTimer = 1.0f;
+        player = transform.GetComponent<Rigidbody2D>();
+        oxygen = transform.GetComponent<PlayerOxygen>();
     }
     // Update is called once per frame
     void Update()
     {
+        if (bTimer > 0)
+        {
+            bTimer -= Time.deltaTime;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && bTimer <= 0)
+        {
+            Boost();
+        }
+
         // Player movement from input (it's a variable between -1 and 1) for
         // degree of left or right movement
         float horizontal = Input.GetAxis("Horizontal");
-
         float vertical = Input.GetAxis("Vertical");
-
-        if(isRightBoulder && horizontal < 0)
-        {
-            horizontal = 0;
-        }else if(isLeftBoulder && horizontal > 0)
-        {
-            horizontal = 0;
-        }
 
         movement = new Vector2(horizontal, vertical);
         player.AddForce(movement * speed * Time.deltaTime);
     }
-    
-} 
+
+    void Boost()
+    {
+        if (oxygen.DecreaseOxygen(boostCost))
+        {
+            Vector2 facing = player.velocity.normalized;
+            player.AddForce(facing * boostSpeed);
+            bTimer = boostCooldown;
+        }
+    }
+
+}

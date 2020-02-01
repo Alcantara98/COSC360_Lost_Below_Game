@@ -31,6 +31,7 @@ public class Chase : MonoBehaviour {
 	// (initialise via the Inspector Panel)
 	private float chaseSpeed;
     public float SpeedWhenChasing;
+    public float SpeedGoingBack;
 
 	// Chasing game object must have a AStarPathfinder component - 
 	// this is a reference to that component, which will get initialised
@@ -55,18 +56,19 @@ public class Chase : MonoBehaviour {
         Vector2 player = target.transform.position;
         Vector2 waypoint = goBackToWayPoint.transform.position;
         //Start Chase
-        if (chase == false && Mathf.Sqrt(Mathf.Pow(player.x - transform.position.x, 2) + Mathf.Pow(player.y - transform.position.y, 2)) < startChaseRadius)
+        if (/*chase == false &&*/ Mathf.Sqrt(Mathf.Pow(player.x - transform.position.x, 2) + Mathf.Pow(player.y - transform.position.y, 2)) < startChaseRadius)
         {
             chase = true;
             chaseSpeed = SpeedWhenChasing;
             FollowPath.followPath = false;
+            chaseStop = false;
         }
         //Go Back to Waypoint
-        else if(chase == true && Mathf.Sqrt(Mathf.Pow(player.x - transform.position.x, 2) + Mathf.Pow(player.y - transform.position.y, 2)) > stopChaseRadius)
+        else if(chase == true && Mathf.Sqrt(Mathf.Pow(player.x - transform.position.x, 2) + Mathf.Pow(player.y - transform.position.y, 2)) > startChaseRadius)
         {
             chaseStop = true;
             chaseSpeed = 0;
-            pathfinder.GoTowards(goBackToWayPoint, 2);
+            pathfinder.GoTowards(goBackToWayPoint, SpeedGoingBack);
             //Start Following Waypoint
             if (Mathf.Sqrt(Mathf.Pow(waypoint.x - transform.position.x, 2) + Mathf.Pow(waypoint.y - transform.position.y, 2)) < 1)
             {

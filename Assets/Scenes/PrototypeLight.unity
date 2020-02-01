@@ -2143,6 +2143,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1524153564, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4245155028685315284, guid: c4821cbdda6164076b472a0f98d7ae62,
         type: 3}
       propertyPath: m_Name
@@ -2944,7 +2948,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.55400026
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4209501069077575497, guid: a480ce41e30e82344b162b6fde22c66e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a480ce41e30e82344b162b6fde22c66e, type: 3}
 --- !u!4 &901778685 stripped
 Transform:
