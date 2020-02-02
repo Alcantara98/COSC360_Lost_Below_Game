@@ -28,6 +28,7 @@ public class PlayerPhysics : MonoBehaviour
         {
             bTimer -= Time.deltaTime;
         }
+
         if (Input.GetKeyDown(KeyCode.Space) && bTimer <= 0)
         {
             Boost();
