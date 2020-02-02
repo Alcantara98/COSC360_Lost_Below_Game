@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     public float turnSpeed = 2;
     public float idleSpeed = 1;
     public float chaseSpeed = 2;
+    public float directFollow = 3;
 
     enum Behaviour
     {
@@ -83,7 +84,7 @@ public class EnemyController : MonoBehaviour
 
     private void Chase()
     {
-        if (Vector2.Distance(target.transform.position, transform.position) < 2)
+        if (Vector2.Distance(target.transform.position, transform.position) < directFollow)
         {
 
             Vector2 difference = transform.position - target.transform.position;
