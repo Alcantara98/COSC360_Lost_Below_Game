@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class Collectibles : MonoBehaviour
+public class PlayerCollectibles : MonoBehaviour
 {
     public GameObject knifeIcon;
     public static bool hasKnife = false;
@@ -15,19 +14,30 @@ public class Collectibles : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Knife")
         {
-            if (knifeIcon != null && gameObject.tag == "Knife")
+            Debug.Log(hasKnife);
+            if (knifeIcon != null)
             {
                 knifeIcon.SetActive(true);
                 hasKnife = true;
+                Debug.Log(hasKnife);
             } else if (knifeIcon == null)
             {
                 Debug.Log("That piece of shit icon is not found");
             }
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "Vine")
+        {
+            Debug.Log(hasKnife);
+            if (hasKnife)
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 }
