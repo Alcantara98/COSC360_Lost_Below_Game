@@ -6,9 +6,6 @@ public class GlowstickController : MonoBehaviour
 {
     public GameObject glowstick;
     public GameObject glowInstance;
-    float glowDuration = 3f;
-    
-
 
     //number of glowsticks
     public int nglow = 3;

@@ -303,6 +303,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1079588519, guid: c4821cbdda6164076b472a0f98d7ae62, type: 3}
+      propertyPath: m_UseNormalMap
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4245155028685315284, guid: c4821cbdda6164076b472a0f98d7ae62,
         type: 3}
       propertyPath: m_Name
@@ -628,13 +632,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 4
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.505
   m_Color: {r: 0, g: 0, b: 0.19607843, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
-  m_UseNormalMap: 0
+  m_UseNormalMap: 1
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
   m_PointLightInnerAngle: 360
@@ -643,7 +647,7 @@ MonoBehaviour:
   m_PointLightOuterRadius: 1
   m_PointLightDistance: 3
   m_PointLightQuality: 1
-  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricSides: 3
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
   m_ShapeLightFalloffSize: 0.5
