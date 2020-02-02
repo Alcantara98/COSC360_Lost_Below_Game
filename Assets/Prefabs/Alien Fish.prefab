@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1752606079294819723}
   - component: {fileID: 1752606079294819722}
-  - component: {fileID: 1752606079294819717}
   - component: {fileID: 1752606079294819716}
-  - component: {fileID: -8626633859452142249}
   - component: {fileID: 4640726083582248457}
+  - component: {fileID: 8369025179805158457}
+  - component: {fileID: 1596994216}
   m_Layer: 0
   m_Name: Alien Fish
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1752606079294819721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.99, y: 1.48, z: -2}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 332574a75a60448718b4c7f981ec1cc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a5b5cb17f5aff694e9f4f973738110d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1752606079294819717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752606079294819721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c323b1e195d7f746bbd5384bebd8051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 3
 --- !u!114 &1752606079294819716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,24 +98,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridObject: {fileID: 0}
   updateFrequency: 5
+  turnSpeed: 5
   DrawPathInEditor: 0
   PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
---- !u!114 &-8626633859452142249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752606079294819721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a4e5af9c4f9f342acba79e5f131f78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: []
-  moveSpeed: 2
-  speed: 0
-  turnSpeed: 0
 --- !u!58 &4640726083582248457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -140,9 +111,49 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.18
+--- !u!114 &8369025179805158457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752606079294819721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3caf23e2952ef4a99a349d9ad6bb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  turnSpeed: 2
+  idleSpeed: 1
+  chaseSpeed: 2
+  startChaseRadius: 3
+  stopChaseRadius: 10
+--- !u!50 &1596994216
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752606079294819721}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
