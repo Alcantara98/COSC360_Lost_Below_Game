@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerPhysics : MonoBehaviour
 {
@@ -14,6 +12,8 @@ public class PlayerPhysics : MonoBehaviour
     Rigidbody2D player;
     //public OxygenMaster oxygen;
 
+
+    float previousHorizontal;
 
     private void Start()
     {
@@ -38,6 +38,84 @@ public class PlayerPhysics : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        if(horizontal < 0)
+        {
+            if (previousHorizontal > 0)
+            {
+                var rotationVector = transform.rotation.eulerAngles;
+                rotationVector.z *= -1;
+                transform.rotation = Quaternion.Euler(rotationVector);
+            }
+            this.transform.localScale = new Vector2(-0.2f, 0.2f);
+        }else if(horizontal > 0)
+        {
+            if (previousHorizontal < 0)
+            {
+                var rotationVector = transform.rotation.eulerAngles;
+                rotationVector.z *= -1;
+                transform.rotation = Quaternion.Euler(rotationVector);
+            }
+            this.transform.localScale = new Vector2(0.2f, 0.2f);
+        }
+
+        if (vertical > 0 && horizontal > 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, 45),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical < 0 && horizontal > 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, -45),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical > 0 && horizontal < 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, -45),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical < 0 && horizontal < 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, +45),
+                                 2 * Time.deltaTime);
+        }
+        if ((horizontal < 0 || horizontal > 0) && vertical > -0.01 && vertical < 0.01)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, 0),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, 90),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, -90),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, -90),
+                                 2 * Time.deltaTime);
+        }
+        if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, 90),
+                                 2 * Time.deltaTime);
+        }
+        if (horizontal > 0 || horizontal < 0)
+        {
+            previousHorizontal = horizontal;
+        }
         movement = new Vector2(horizontal, vertical);
         player.AddForce(movement * speed * Time.deltaTime);
     }
