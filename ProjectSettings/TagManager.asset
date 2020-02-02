@@ -11,7 +11,7 @@ TagManager:
   - AlienStopChase
   - BoulderSquare
   - Knife
-  - Vine
+  - Refill
   layers:
   - Default
   - TransparentFX
@@ -48,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Walls
+    uniqueID: 84762867
     locked: 0
