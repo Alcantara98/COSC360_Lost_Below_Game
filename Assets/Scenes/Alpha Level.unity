@@ -5490,7 +5490,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &566089767
 MonoBehaviour:
@@ -11003,17 +11003,22 @@ PrefabInstance:
     - target: {fileID: 3974827010581338337, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_Name
-      value: PlayerForAlpha
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974827010581338337, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8429985
+      value: -12.89
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9500456
+      value: 24.48
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
@@ -11059,6 +11064,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974827010581338346, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974827010581338346, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: deathTimer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
@@ -19624,7 +19639,7 @@ GameObject:
   - component: {fileID: 2062134489}
   m_Layer: 0
   m_Name: Safe Zone
-  m_TagString: Untagged
+  m_TagString: Refill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19718,7 +19733,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2072016598 stripped
 Transform:
