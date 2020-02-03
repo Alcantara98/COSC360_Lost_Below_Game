@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerOxygen : MonoBehaviour
 {
     public static float TankSize = 30.0f;
     public static float TankAir = 30.0f;
+    public float deathTimer = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +23,16 @@ public class PlayerOxygen : MonoBehaviour
             UseOxygen();
         }
 
+        if (TankAir <= 0) {
+            StartCoroutine(Deth());
+        }
+
     }
 
     void UseOxygen()
     {
         TankAir -= Time.smoothDeltaTime;
-        //Debug.Log("O2 Left: " + TankAir);
+        Debug.Log("O2 Left: " + TankAir);
 
         if (TankAir <= 0)
         {
@@ -43,5 +49,13 @@ public class PlayerOxygen : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    IEnumerator Deth()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(2);
+
+        SceneManager.LoadScene("GameOver");
     }
 }

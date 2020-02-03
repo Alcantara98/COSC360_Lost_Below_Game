@@ -8,13 +8,19 @@ public class Boulder : MonoBehaviour
     Transform player;
     Vector2 offset;
 
+    AStarGrid grid;
+
+    Vector3 previousPos;
+    float updateTimer = 4;
+
     // Start is called before the first frame update
     void Start()
     {
+        previousPos = transform.position;
         // Gets Components and sets Player by looking for "Player" in game objects
         joint = transform.GetComponent<RelativeJoint2D>();
         player = GameObject.Find("Player").transform;
-
+        grid = GameObject.Find("Grid").GetComponent<AStarGrid>();
         // disables the joint to the boulder by default
         joint.enabled = false;
     }
@@ -22,6 +28,15 @@ public class Boulder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (updateTimer <= 0 && previousPos != transform.position)
+        {
+            grid.CreateMap();
+            updateTimer = 4;
+        } else
+        {
+            updateTimer--;
+        }
+
 
         // When player is close enough to boulder and presses button, enables joint and keeps it
         // at current offset. Disables joint again when button released
