@@ -18,13 +18,7 @@ public class Flashlight : MonoBehaviour
 
     void turning()
     {
-        //Vector3 mousePos = Input.mousePosition;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = transform.position.z;
-
-        Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position);
-        transform.rotation = targetRotation;
-        //Vector2 direc = new Vector2(- mousePos.y + transform.position.x, mousePos.x - transform.position.y);
-        //transform.right = direc;
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 90);
     }
 }
