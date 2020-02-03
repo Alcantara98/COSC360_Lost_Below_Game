@@ -33,11 +33,13 @@ public class PlayerCollectibles : MonoBehaviour
 
         if (collision.gameObject.tag == "Vine")
         {
-            Debug.Log(hasKnife);
-            if (hasKnife)
-            {
-                Destroy(collision.gameObject);
-            }
+            
+                Debug.Log(hasKnife);
+                if (hasKnife)
+                {
+                    Destroy(collision.gameObject);
+                }
+            
         }
     }
 }
