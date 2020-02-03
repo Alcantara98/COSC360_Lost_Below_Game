@@ -53,9 +53,12 @@ public class PlayerOxygen : MonoBehaviour
 
     IEnumerator Deth()
     {
-        //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(2);
 
-        SceneManager.LoadScene("GameOver");
+        if (TankAir > 0) 
+            yield break;
+        
+
+        //SceneManager.LoadScene("GameOver");
     }
 }
