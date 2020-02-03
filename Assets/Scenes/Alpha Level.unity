@@ -6644,7 +6644,7 @@ PrefabInstance:
     - target: {fileID: 4640726083582248457, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8369025179805158457, guid: 18059c0dd22503b4689e4829b8512cca,
         type: 3}
@@ -17980,7 +17980,7 @@ PrefabInstance:
     - target: {fileID: 6654527376638377130, guid: bb5fc4a5464ff4f50aa04246817bf7ef,
         type: 3}
       propertyPath: Tilesize
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6654527376638377131, guid: bb5fc4a5464ff4f50aa04246817bf7ef,
         type: 3}

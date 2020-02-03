@@ -200,7 +200,7 @@ public class AStarGrid : MonoBehaviour {
 	}
 
 	/* Creates grid map based on the start and end position of the grid */
-	private void CreateMap()
+	public void CreateMap()
 	{
 		//Find positions for start and end of map
 		float startX = MapStartPosition.x;
