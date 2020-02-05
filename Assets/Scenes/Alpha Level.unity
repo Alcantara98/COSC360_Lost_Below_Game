@@ -3180,6 +3180,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1044701320}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &322067099 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -884603778183353402, guid: f1a6b44d6472942418e0f31929bd195f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1044701320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &326705103
 GameObject:
   m_ObjectHideFlags: 0
@@ -11342,6 +11348,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 322067099}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: SlowHeartBeat
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: MediumHeartBeat
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: FastHeartBeat
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: HeartAttackBeat
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: slowHeartBeat
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: mediumHeartBeat
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: fastHeartBeat
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: heartAttackBeat
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3974827009584850386, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -11505,12 +11556,12 @@ PrefabInstance:
     - target: {fileID: 3974827010777913968, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 5.4720325
+      value: 45.439034
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010777913968, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 5.23311
+      value: 27.503063
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3974827009661481262, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
