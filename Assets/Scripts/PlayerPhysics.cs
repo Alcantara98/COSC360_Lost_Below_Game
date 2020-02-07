@@ -161,6 +161,20 @@ public class PlayerPhysics : MonoBehaviour
                                  Quaternion.Euler(0, 0, 90),
                                  turnSpeed * Time.deltaTime);
         }
+        if(horizontal  > -0.01 && horizontal < 0.01 && vertical > -0.01 && vertical < 0.01)
+        {
+            int forScale = 0;
+            if(previousHorizontal > 0)
+            {
+                forScale = 1;
+            }else if( previousHorizontal < 0)
+            {
+                forScale = -1;
+            }
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, forScale * 80),
+                                1 * Time.deltaTime);
+        }
         if (horizontal > 0 || horizontal < 0)
         {
             previousHorizontal = horizontal;
