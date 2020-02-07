@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 2766416185625997811}
   - component: {fileID: -2871477843033611766}
   - component: {fileID: -884603778183353402}
+  - component: {fileID: 5248981930324631757}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -239,7 +240,11 @@ MonoBehaviour:
   heartBeat_Whole: {fileID: 8300000, guid: 83fabd63853425e4faef9f4af810b772, type: 3}
   heartBeat_First: {fileID: 8300000, guid: 7766d67ed53b8e8429898fa8c312e72f, type: 3}
   heartBeat_Last: {fileID: 8300000, guid: 71f45f8feaa1d16498420741d0e8f259, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: -884603778183353402}
+  slowHeartBeat: 1.2
+  mediumHeartBeat: 0.85
+  fastHeartBeat: 0.5
+  heartAttackBeat: 0.3
 --- !u!82 &-884603778183353402
 AudioSource:
   m_ObjectHideFlags: 0
@@ -336,6 +341,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &5248981930324631757
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974827010581338337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4511546514346076231
 PrefabInstance:
   m_ObjectHideFlags: 0

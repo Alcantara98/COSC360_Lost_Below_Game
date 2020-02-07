@@ -901,6 +901,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1203286836252634351}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &454474255 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -884603778183353402, guid: f1a6b44d6472942418e0f31929bd195f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1203286836252634351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!70 &454474261
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3014,6 +3020,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 454474255}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: slowHeartBeat
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: mediumHeartBeat
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: fastHeartBeat
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2871477843033611766, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: heartAttackBeat
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338337, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_Name
