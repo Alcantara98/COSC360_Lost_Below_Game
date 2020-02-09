@@ -11,6 +11,7 @@ public class PlayerPhysics : MonoBehaviour
     PlayerOxygen oxygen;
     Rigidbody2D player;
     public float turnSpeed;
+    public bool pullingBoulder = false;
     //public OxygenMaster oxygen;
 
 
@@ -35,93 +36,95 @@ public class PlayerPhysics : MonoBehaviour
         {
             Boost();
         }
-
-        // Player movement from input (it's a variable between -1 and 1) for
-        // degree of left or right movement
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        if(horizontal < 0)
-        {
-            if (previousHorizontal > 0)
-            {
-                var rotationVector = transform.rotation.eulerAngles;
-                rotationVector.z *= -1;
-                transform.rotation = Quaternion.Euler(rotationVector);
-                this.transform.localScale = new Vector2(this.transform.localScale.x * -1, this.transform.localScale.y);
-            }
-            //this.transform.localScale = new Vector2(-0.2f, 0.2f);
-        }else if(horizontal > 0)
-        {
-            if (previousHorizontal < 0)
-            {
-                var rotationVector = transform.rotation.eulerAngles;
-                rotationVector.z *= -1;
-                transform.rotation = Quaternion.Euler(rotationVector);
-                this.transform.localScale = new Vector2(this.transform.localScale.x * -1, this.transform.localScale.y);
-            }
-            //this.transform.localScale = new Vector2(0.2f, 0.2f);
-        }
+        if (!pullingBoulder) { 
+            // Player movement from input (it's a variable between -1 and 1) for
+            // degree of left or right movement
+            
 
-        if (vertical > 0 && horizontal > 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, 45),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical < 0 && horizontal > 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, -45),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical > 0 && horizontal < 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, -45),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical < 0 && horizontal < 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, +45),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if ((horizontal < 0 || horizontal > 0) && vertical > -0.01 && vertical < 0.01)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, 0),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, 90),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, -90),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, -90),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation,
-                                 Quaternion.Euler(0, 0, 90),
-                                 turnSpeed * Time.deltaTime);
-        }
-        if (horizontal > 0 || horizontal < 0)
-        {
-            previousHorizontal = horizontal;
-        }
-        
+            if (horizontal < 0)
+            {
+                if (previousHorizontal > 0)
+                {
+                    var rotationVector = transform.rotation.eulerAngles;
+                    rotationVector.z *= -1;
+                    transform.rotation = Quaternion.Euler(rotationVector);
+                    this.transform.localScale = new Vector2(this.transform.localScale.x * -1, this.transform.localScale.y);
+                }
+                //this.transform.localScale = new Vector2(-0.2f, 0.2f);
+            } else if (horizontal > 0)
+            {
+                if (previousHorizontal < 0)
+                {
+                    var rotationVector = transform.rotation.eulerAngles;
+                    rotationVector.z *= -1;
+                    transform.rotation = Quaternion.Euler(rotationVector);
+                    this.transform.localScale = new Vector2(this.transform.localScale.x * -1, this.transform.localScale.y);
+                }
+                //this.transform.localScale = new Vector2(0.2f, 0.2f);
+            }
+
+            if (vertical > 0 && horizontal > 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, 45),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical < 0 && horizontal > 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, -45),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical > 0 && horizontal < 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, -45),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical < 0 && horizontal < 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, +45),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if ((horizontal < 0 || horizontal > 0) && vertical > -0.01 && vertical < 0.01)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, 0),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, 90),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, -90),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, -90),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                                     Quaternion.Euler(0, 0, 90),
+                                     turnSpeed * Time.deltaTime);
+            }
+            if (horizontal > 0 || horizontal < 0)
+            {
+                previousHorizontal = horizontal;
+            }
+        }        
         /**
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 90);
