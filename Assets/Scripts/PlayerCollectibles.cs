@@ -14,9 +14,9 @@ public class PlayerCollectibles : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Knife")
+        if (collider.gameObject.tag == "Knife")
         {
             Debug.Log(hasKnife);
             if (knifeIcon != null)
@@ -28,18 +28,26 @@ public class PlayerCollectibles : MonoBehaviour
             {
                 Debug.Log("That piece of shit icon is not found");
             }
-            Destroy(collision.gameObject);
+            Destroy(collider.gameObject);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
 
         if (collision.gameObject.tag == "Vine")
         {
-            
-                Debug.Log(hasKnife);
-                if (hasKnife)
+
+            Debug.Log(hasKnife);
+            if (hasKnife)
+            {
+                if (Input.GetKey(KeyCode.F))
                 {
                     Destroy(collision.gameObject);
                 }
-            
+            }
+
         }
     }
 }

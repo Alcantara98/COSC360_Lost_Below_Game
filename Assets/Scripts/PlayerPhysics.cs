@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class PlayerPhysics : MonoBehaviour
 {
@@ -12,6 +12,9 @@ public class PlayerPhysics : MonoBehaviour
     Rigidbody2D player;
     public float turnSpeed;
     public bool pullingBoulder = false;
+
+    public Animator anim;
+    private bool swimming;
     //public OxygenMaster oxygen;
 
 
@@ -19,6 +22,8 @@ public class PlayerPhysics : MonoBehaviour
 
     private void Start()
     {
+        swimming = false;
+        anim = GetComponentInChildren<Animator>();
         previousHorizontal = 1;
         bTimer = 1.0f;
         player = transform.GetComponent<Rigidbody2D>();
@@ -27,6 +32,43 @@ public class PlayerPhysics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Transition between animations
+        if(swimming ==  false && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        {
+            swimming = true;
+            anim.SetTrigger("Diver Swim");
+            Debug.Log("Swim");
+        }
+        if(swimming == true)
+        {
+            if(Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+            else if (Input.GetKeyUp(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+            else if (Input.GetKeyUp(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+            else if (Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+           // swimming = false;
+        }
+
         if (bTimer > 0)
         {
             bTimer -= Time.deltaTime;
@@ -36,6 +78,9 @@ public class PlayerPhysics : MonoBehaviour
         {
             Boost();
         }
+
+        // Player movement from input (it's a variable between -1 and 1) for
+        // degree of left or right movement
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
