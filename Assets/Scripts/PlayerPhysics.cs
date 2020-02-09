@@ -11,6 +11,9 @@ public class PlayerPhysics : MonoBehaviour
     PlayerOxygen oxygen;
     Rigidbody2D player;
     public float turnSpeed;
+
+    public Animator anim;
+    private bool swimming;
     //public OxygenMaster oxygen;
 
 
@@ -18,6 +21,8 @@ public class PlayerPhysics : MonoBehaviour
 
     private void Start()
     {
+        swimming = false;
+        anim = GetComponentInChildren<Animator>();
         previousHorizontal = 1;
         bTimer = 1.0f;
         player = transform.GetComponent<Rigidbody2D>();
@@ -26,6 +31,43 @@ public class PlayerPhysics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Transition between animations
+        if(swimming ==  false && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        {
+            swimming = true;
+            anim.SetTrigger("Diver Swim");
+            Debug.Log("Swim");
+        }
+        if(swimming == true)
+        {
+            if(Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+            else if (Input.GetKeyUp(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+            else if (Input.GetKeyUp(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+            else if (Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A))
+            {
+                anim.SetTrigger("Diver Idle");
+                swimming = false;
+                Debug.Log("Idle");
+            }
+           // swimming = false;
+        }
+
         if (bTimer > 0)
         {
             bTimer -= Time.deltaTime;
@@ -41,8 +83,9 @@ public class PlayerPhysics : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        if(horizontal < 0)
+        if (horizontal < 0)
         {
+
             if (previousHorizontal > 0)
             {
                 var rotationVector = transform.rotation.eulerAngles;
@@ -51,7 +94,8 @@ public class PlayerPhysics : MonoBehaviour
                 this.transform.localScale = new Vector2(this.transform.localScale.x * -1, this.transform.localScale.y);
             }
             //this.transform.localScale = new Vector2(-0.2f, 0.2f);
-        }else if(horizontal > 0)
+        }
+        else if (horizontal > 0)
         {
             if (previousHorizontal < 0)
             {
@@ -117,11 +161,25 @@ public class PlayerPhysics : MonoBehaviour
                                  Quaternion.Euler(0, 0, 90),
                                  turnSpeed * Time.deltaTime);
         }
+        if(horizontal  > -0.01 && horizontal < 0.01 && vertical > -0.01 && vertical < 0.01)
+        {
+            int forScale = 0;
+            if(previousHorizontal > 0)
+            {
+                forScale = 1;
+            }else if( previousHorizontal < 0)
+            {
+                forScale = -1;
+            }
+            transform.rotation = Quaternion.Slerp(transform.rotation,
+                                 Quaternion.Euler(0, 0, forScale * 80),
+                                1 * Time.deltaTime);
+        }
         if (horizontal > 0 || horizontal < 0)
         {
             previousHorizontal = horizontal;
         }
-        
+
         /**
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 90);
@@ -129,6 +187,7 @@ public class PlayerPhysics : MonoBehaviour
 
         movement = new Vector2(horizontal, vertical);
         player.AddForce(movement * speed * Time.deltaTime);
+    
     }
 
     void Boost()
