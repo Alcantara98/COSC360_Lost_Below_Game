@@ -1274,5 +1274,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFish
       objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5141144
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8577216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 61.877003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7234247
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9506072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342829760090572231, guid: a1fe46789288768458becda337288b6a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1fe46789288768458becda337288b6a, type: 3}
