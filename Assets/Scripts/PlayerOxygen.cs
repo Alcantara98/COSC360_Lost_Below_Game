@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerOxygen : MonoBehaviour
 {
-    public static float TankSize = 30.0f;
-    public static float TankAir = 30.0f;
+    public static float TankSize = 100.0f;
+    public static float TankAir = 100.0f;
     public float deathTimer = 2.0f;
 
     // Start is called before the first frame update
