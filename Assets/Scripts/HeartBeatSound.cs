@@ -30,7 +30,6 @@ public class HeartBeatSound : MonoBehaviour
         timePassed += Time.deltaTime;
         if(PlayerOxygen.TankAir/PlayerOxygen.TankSize < 0.15f && timePassed > heartAttackBeat)
         {
-            Debug.Log("first");
             audioSource.PlayOneShot(heartBeat_First, 1);
             timePassed = 0;
         }
@@ -38,19 +37,16 @@ public class HeartBeatSound : MonoBehaviour
         {
             audioSource.PlayOneShot(heartBeat_First, 1);
             timePassed = 0;
-            Debug.Log("Second");
         }
         else if (PlayerOxygen.TankAir / PlayerOxygen.TankSize < 0.6f && timePassed > mediumHeartBeat)
         {
             audioSource.PlayOneShot(heartBeat_Whole, 1);
             timePassed = 0;
-            Debug.Log("Third");
         }
         else if (timePassed > slowHeartBeat)
         {
             audioSource.PlayOneShot(heartBeat_Whole, 1);
             timePassed = 0;
-            Debug.Log("Fourth");
         }
     }
 }
