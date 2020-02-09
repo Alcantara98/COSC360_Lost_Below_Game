@@ -4943,6 +4943,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1915660305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3974827010581338337, guid: f1a6b44d6472942418e0f31929bd195f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1203286836252634351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1915660306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915660305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7510bea6d35b40db9c00ad41ce8ef6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knifeIcon: {fileID: 0}
 --- !u!1 &1934228954
 GameObject:
   m_ObjectHideFlags: 0
