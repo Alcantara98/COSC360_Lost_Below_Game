@@ -59,6 +59,6 @@ public class PlayerOxygen : MonoBehaviour
             yield break;
         
 
-        //SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver");
     }
 }
