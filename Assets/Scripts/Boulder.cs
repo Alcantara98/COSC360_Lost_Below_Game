@@ -7,11 +7,13 @@ public class Boulder : MonoBehaviour
     RelativeJoint2D joint;
     Transform player;
     Vector2 offset;
+    float grabRadius = 3.0f;
 
-    AStarGrid grid;
+    PlayerPhysics playerScript;
 
     Vector3 previousPos;
-    float updateTimer = 4;
+    float updateTimer = 20;
+    AstarPath StarGrid;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +22,11 @@ public class Boulder : MonoBehaviour
         // Gets Components and sets Player by looking for "Player" in game objects
         joint = transform.GetComponent<RelativeJoint2D>();
         player = GameObject.Find("Player").transform;
-        grid = GameObject.Find("Grid").GetComponent<AStarGrid>();
+        //grid = GameObject.Find("Grid").GetComponent<AstarPath>();
         // disables the joint to the boulder by default
         joint.enabled = false;
+        StarGrid = GameObject.Find("Pathing_Grid").GetComponent<AstarPath>();
+        playerScript = player.GetComponent<PlayerPhysics>();
     }
 
     // Update is called once per frame
@@ -30,8 +34,8 @@ public class Boulder : MonoBehaviour
     {
         if (updateTimer <= 0 && previousPos != transform.position)
         {
-            grid.CreateMap();
-            updateTimer = 4;
+            StarGrid.Scan();
+            updateTimer = 20;
         } else
         {
             updateTimer--;
@@ -40,14 +44,16 @@ public class Boulder : MonoBehaviour
 
         // When player is close enough to boulder and presses button, enables joint and keeps it
         // at current offset. Disables joint again when button released
-        if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < 1.4)
+        if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)
         {
             joint.linearOffset = player.position - transform.position;
             joint.enabled = true;
+            playerScript.pullingBoulder = true;
         }
         else if (Input.GetMouseButtonUp(0))
         {
             joint.enabled = false;
+            playerScript.pullingBoulder = false;
         }
     }
 }
