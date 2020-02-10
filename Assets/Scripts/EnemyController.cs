@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     }
     Behaviour currentBehaviour;
 
-    int waypointIndex = 0;
+    int waypointIndex;
 
     public float startChaseRadius;
     public float stopChaseRadius;
