@@ -7,6 +7,7 @@ public class Boulder : MonoBehaviour
     RelativeJoint2D joint;
     Transform player;
     Vector2 offset;
+    float grabRadius = 3.0f;
 
     PlayerPhysics playerScript;
 
@@ -43,7 +44,7 @@ public class Boulder : MonoBehaviour
 
         // When player is close enough to boulder and presses button, enables joint and keeps it
         // at current offset. Disables joint again when button released
-        if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < 2.5)
+        if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)
         {
             joint.linearOffset = player.position - transform.position;
             joint.enabled = true;
