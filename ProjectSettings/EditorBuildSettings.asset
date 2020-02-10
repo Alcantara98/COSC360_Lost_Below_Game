@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GlowstickTest.unity
-    guid: e242c4ef05a8d49b3a782f2aaa6e4500
+    path: Assets/Scenes/IntroScene.unity
+    guid: cd480df40cf654ce99f70bfa08cc75be
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 14b9866cf65cd480987cacd255f3e499
