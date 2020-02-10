@@ -25,7 +25,7 @@ public class Boulder : MonoBehaviour
         //grid = GameObject.Find("Grid").GetComponent<AstarPath>();
         // disables the joint to the boulder by default
         joint.enabled = false;
-        StarGrid = GameObject.Find("Pathing_Grid").GetComponent<AstarPath>();
+        StarGrid = GameObject.Find("PathGrid").GetComponent<AstarPath>();
         playerScript = player.GetComponent<PlayerPhysics>();
     }
 
