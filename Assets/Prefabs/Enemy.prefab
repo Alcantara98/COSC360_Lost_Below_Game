@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7695656988750299198}
   - component: {fileID: 7695656988750299199}
   - component: {fileID: 7695656988750299196}
+  - component: {fileID: 2121929582}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -90,10 +91,10 @@ MonoBehaviour:
   enableRotation: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
-  rotationSpeed: 180
+  rotationSpeed: 90
   slowdownDistance: 0.6
   pickNextWaypointDist: 1.2
-  endReachedDistance: 0.2
+  endReachedDistance: 1.4
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -112,6 +113,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &2121929582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7695656988750299194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5d41c31791c4e1288e3a1e7529b2e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  idleSpeed: 2
+  chaseSpeed: 3
+  startChaseRadius: 8
+  stopChaseRadius: 15
 --- !u!1001 &7695656989288754423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,6 +141,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7695656988750299197}
     m_Modifications:
+    - target: {fileID: 2425337527848150256, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2425337527848150269, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
       propertyPath: m_Name
@@ -197,6 +224,11 @@ PrefabInstance:
     - target: {fileID: 4379565614345270612, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611140299000177997, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
