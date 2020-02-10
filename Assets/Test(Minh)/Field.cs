@@ -114,6 +114,8 @@ public class Field : MonoBehaviour
         // Set the new vertices and triangles in the mesh
         mesh.vertices = vertices;
         mesh.triangles = triangles;
+
+        this.transform.rotation = Quaternion.identity;
     }
 
     void OnDrawGizmos()

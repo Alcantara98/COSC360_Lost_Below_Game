@@ -2628,6 +2628,21 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.maxColor.g
       value: 0.3895707
       objectReference: {fileID: 0}
+    - target: {fileID: 3423067922780860811, guid: 3865a95fa1dae4c6f95c7276d8ef3bc4,
+        type: 3}
+      propertyPath: TrailModule.colorOverLifetime.maxGradient.key1.r
+      value: 0.0504628
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423067922780860811, guid: 3865a95fa1dae4c6f95c7276d8ef3bc4,
+        type: 3}
+      propertyPath: TrailModule.colorOverLifetime.maxGradient.key1.g
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423067922780860811, guid: 3865a95fa1dae4c6f95c7276d8ef3bc4,
+        type: 3}
+      propertyPath: TrailModule.colorOverLifetime.maxGradient.key1.b
+      value: 0.2686656
+      objectReference: {fileID: 0}
     - target: {fileID: 3423067922780860813, guid: 3865a95fa1dae4c6f95c7276d8ef3bc4,
         type: 3}
       propertyPath: m_LocalPosition.x
