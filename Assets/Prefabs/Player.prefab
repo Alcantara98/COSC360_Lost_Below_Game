@@ -175,6 +175,7 @@ MonoBehaviour:
   speed: 200
   boostCost: 5
   turnSpeed: 2
+  pullingBoulder: 0
   anim: {fileID: 0}
 --- !u!50 &3974827010581338341
 Rigidbody2D:
