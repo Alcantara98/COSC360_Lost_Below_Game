@@ -16,7 +16,8 @@ public class EnemyAI : MonoBehaviour
     public float stopChaseRadius = 15;
     AIDestinationSetter destinationScript;
     AIPath path;
-    public 
+    private bool rightFacing = false;
+    public float moveOnDistance = 1;
 
     enum Behaviour
     {
@@ -41,9 +42,22 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (path.reachedDestination && currentBehaviour == Behaviour.FollowPoints)
+        
+        if (this.transform.rotation.eulerAngles.z > 10 && transform.rotation.eulerAngles.z < 170 && rightFacing)
+        {
+            this.transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+            rightFacing = false;
+        } else if (transform.rotation.eulerAngles.z > 190 && transform.rotation.eulerAngles.z < 350 && !rightFacing)
+        {
+            this.transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+            rightFacing = true;
+            
+        }
+        Debug.Log(Vector2.Distance(waypoints[waypointIndex].position, transform.position));
+        if (Vector2.Distance(waypoints[waypointIndex].position, transform.position) < moveOnDistance && currentBehaviour == Behaviour.FollowPoints)
         {
             waypointIndex = (waypointIndex + 1) % waypoints.Length;
+            destinationScript.target = waypoints[waypointIndex];
         }
         float distance = Vector2.Distance(target.position, transform.position);
         //Debug.Log(distance);
