@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerPhysics : MonoBehaviour
+public class PlayerPhysicsWithFlip : MonoBehaviour
 {
     private Vector2 movement;
     public float boostSpeed = 400;
