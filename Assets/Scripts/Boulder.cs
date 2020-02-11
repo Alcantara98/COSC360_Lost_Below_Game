@@ -7,12 +7,12 @@ public class Boulder : MonoBehaviour
     RelativeJoint2D joint;
     Transform player;
     Vector2 offset;
-    float grabRadius = 3.0f;
-
+    public float grabRadius = 3.0f;
+    public GameObject grid;
     PlayerPhysics playerScript;
 
     Vector3 previousPos;
-    float updateTimer = 20;
+    float updateTimer = 30;
     AstarPath StarGrid;
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class Boulder : MonoBehaviour
         //grid = GameObject.Find("Grid").GetComponent<AstarPath>();
         // disables the joint to the boulder by default
         joint.enabled = false;
-        StarGrid = GameObject.Find("PathGrid").GetComponent<AstarPath>();
+        StarGrid = grid.GetComponent<AstarPath>();
         playerScript = player.GetComponent<PlayerPhysics>();
     }
 
@@ -36,6 +36,7 @@ public class Boulder : MonoBehaviour
         {
             StarGrid.Scan();
             updateTimer = 20;
+            previousPos = transform.position;
         } else
         {
             updateTimer--;
