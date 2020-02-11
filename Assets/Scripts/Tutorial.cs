@@ -60,13 +60,17 @@ public class Tutorial : MonoBehaviour
                 if (player.transform.position.x > 34) tutInt++;
                 break;
             case 4:
-                //if (player.transform.position.x > 40.5)
+                if (player.transform.position.x > 40.5)
                 {
-                    //if(timer >= 5f)
-                    {
-                        timer += Time.deltaTime;
-                        if(timer >= 1f) tutInt++;
-                    }
+                        if (timer >= 5f)
+                        {
+                            tutInt++;
+                        }
+                        else
+                        {
+                            timer += Time.deltaTime;
+                            Debug.Log(timer);
+                        }
                 }
                 break;
             case 5:
@@ -82,8 +86,12 @@ public class Tutorial : MonoBehaviour
                 if (Input.GetKey(KeyCode.G)) tutInt++;
                 break;
             case 9:
-                timer += Time.deltaTime;
-                if (timer >= 2f) tutInt++;
+                if (timer >= 10f) tutInt++;
+                else
+                {
+                    timer += Time.deltaTime;
+                    Debug.Log(timer);
+                }
                 break;
             default:
                 tutInt++;
