@@ -42,7 +42,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        if (horizontal < (previousHorizontal - 0.1) && horizontal < 0)
+        if (horizontal < (previousHorizontal-0.1) && horizontal < 0) 
         {
             justFlipped = true;
             flipping = true;
@@ -52,20 +52,21 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                 {
                     anim.SetTrigger("Diver Swim to Flip");
                 }
-                else if (currentAnimation == 1)
+                else if(currentAnimation == 1)
                 {
                     anim.SetTrigger("Diver Idle to Flip");
                 }
                 currentAnimation = 3;
-                transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
+                transform.Rotate(new Vector3(0,0,1) * 180 * Time.deltaTime, Space.Self);
                 /*transform.rotation = Quaternion.Slerp(transform.rotation,
                                              Quaternion.Euler(0, 0, 90),
                                              3 * Time.deltaTime);*/
             }
-            if (this.transform.rotation.z > 0.75)
+            if(this.transform.rotation.z > 0.75)
             {
                 Debug.Log("Done Flipping");
                 flipping = false;
+                swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
                 currentAnimation = 2;
             }
@@ -91,8 +92,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     if (currentAnimation == 2)
                     {
                         anim.SetTrigger("Diver Idle");
-                    }
-                    else if (currentAnimation == 3)
+                    }else if(currentAnimation == 3)
                     {
                         anim.SetTrigger("Diver Flip to Idle");
                     }
@@ -150,9 +150,9 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                 // degree of left or right movement
 
 
-                if (horizontal < 0)
+                if (horizontal < -0.1)
                 {
-                    if (previousHorizontal > 0)
+                    if (previousHorizontal > 0.1)
                     {
                         var rotationVector = transform.rotation.eulerAngles;
                         rotationVector.z *= -1;
@@ -160,9 +160,9 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                         this.transform.localScale = new Vector2(this.transform.localScale.x * -1, this.transform.localScale.y);
                     }
                 }
-                else if (horizontal > 0)
+                else if (horizontal > 0.1)
                 {
-                    if (previousHorizontal < 0)
+                    if (previousHorizontal < -0.1)
                     {
                         var rotationVector = transform.rotation.eulerAngles;
                         rotationVector.z *= -1;
