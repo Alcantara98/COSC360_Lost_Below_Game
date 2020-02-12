@@ -66,7 +66,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
                     AngleSection = 1;
                 }
-                else if(this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z <= 360)
+                else if(this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
                 {
                     transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
                     AngleSection = 4;
@@ -74,7 +74,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             if(AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
             {
-                Debug.Log("Done Flipping");
                 flipping = false;
                 swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
@@ -82,7 +81,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
             {
-                Debug.Log("Done Flipping");
                 flipping = false;
                 swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
@@ -92,17 +90,17 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Do this when in middle of flipping animation but player chooses to revert back to the same direction
         else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
         {
-            justFlipped = true;
-            Debug.Log("Done Flipping");
+            justFlipped = false;
             flipping = false;
-            swimming = true;
-            if (horizontal > 0.5)
+            if (horizontal > 0.1)
             {
+                swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
                 currentAnimation = 2;
             }
             else if(horizontal > -0.1 & horizontal < 0.1)
             {
+                swimming = false;
                 anim.SetTrigger("Diver Flip to Idle");
                 currentAnimation = 1;
             }
@@ -130,7 +128,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
                     AngleSection = 1;
                 }
-                else if (this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z <= 360)
+                else if (this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
                 {
                     transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
                     AngleSection = 4;
@@ -138,7 +136,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             if (AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
             {
-                Debug.Log("Done Flipping");
                 flipping = false;
                 swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
@@ -146,7 +143,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
             {
-                Debug.Log("Done Flipping");
                 flipping = false;
                 swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
@@ -156,17 +152,17 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Do this when in middle of flipping animation but player chooses to revert back to the same direction
         else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
         {
-            justFlipped = true;
-            Debug.Log("Done Flipping");
+            justFlipped = false;
             flipping = false;
-            swimming = true;
-            if (horizontal > 0.5)
+            if (horizontal < -0.1)
             {
+                swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
                 currentAnimation = 2;
             }
             else if (horizontal > -0.1 & horizontal < 0.1)
             {
+                swimming = false;
                 anim.SetTrigger("Diver Flip to Idle");
                 currentAnimation = 1;
             }
