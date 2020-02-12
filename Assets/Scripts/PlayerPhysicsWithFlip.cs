@@ -92,6 +92,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Do this when in middle of flipping animation but player chooses to revert back to the same direction
         else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
         {
+            justFlipped = true;
             Debug.Log("Done Flipping");
             flipping = false;
             swimming = true;
@@ -104,7 +105,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             {
                 anim.SetTrigger("Diver Flip to Idle");
                 currentAnimation = 1;
-                justFlipped = false;
             }
         }
 
@@ -156,6 +156,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Do this when in middle of flipping animation but player chooses to revert back to the same direction
         else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
         {
+            justFlipped = true;
             Debug.Log("Done Flipping");
             flipping = false;
             swimming = true;
@@ -166,7 +167,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else if (horizontal > -0.1 & horizontal < 0.1)
             {
-                justFlipped = false;
                 anim.SetTrigger("Diver Flip to Idle");
                 currentAnimation = 1;
             }
