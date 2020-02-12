@@ -18,6 +18,7 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         defaultMass = boulder.GetComponent<Rigidbody2D>().drag;
+        knife.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,11 +67,12 @@ public class Tutorial : MonoBehaviour
                 if (player.transform.position.x > 34) tutInt++;
                 break;
             case 5:
-                if (player.transform.position.x > 40.5)
+                if (player.transform.position.x > 36.5)
                 {
-                        if (timer >= 5f)
+                        if (timer >= 3f)
                         {
                             tutInt++;
+                        knife.SetActive(true);
                         }
                         else
                         {
@@ -80,7 +82,7 @@ public class Tutorial : MonoBehaviour
                 }
                 break;
             case 6:
-                if (knife.activeSelf) tutInt++;
+                if (!knife.activeSelf) tutInt++;
                 break;
             case 7:
                 if (player.transform.position.x > 39.5) tutInt++;

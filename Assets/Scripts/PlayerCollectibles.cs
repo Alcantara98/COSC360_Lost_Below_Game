@@ -48,13 +48,13 @@ public class PlayerCollectibles : MonoBehaviour
             {
                 Debug.Log("That piece of shit icon is not found");
             }
-            Destroy(collider.gameObject);
+            collider.gameObject.SetActive(false);
         }
 
         if (collider.gameObject.tag == "Glow")
         {
             nglow++;
-            Destroy(collider.gameObject);
+            collider.gameObject.SetActive(true);
         }
     }
 
@@ -70,7 +70,7 @@ public class PlayerCollectibles : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.F))
                 {
-                    Destroy(collision.gameObject);
+                    collision.gameObject.SetActive(false);
                 }
             }
 

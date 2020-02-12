@@ -1033,7 +1033,7 @@ PrefabInstance:
         type: 3}
       propertyPath: knife
       value: 
-      objectReference: {fileID: 1688381899}
+      objectReference: {fileID: 1614418897}
     - target: {fileID: 7609551999223098764, guid: e15459d5a07504c6da3db71ed0136b27,
         type: 3}
       propertyPath: player
@@ -10667,6 +10667,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1614418897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4080781269293577049, guid: a8e5377579b4848f0bf768d6f14ab997,
+    type: 3}
+  m_PrefabInstance: {fileID: 482135743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1621729710
 GameObject:
   m_ObjectHideFlags: 0
@@ -14080,7 +14086,7 @@ PrefabInstance:
     - target: {fileID: 4812953288561943094, guid: 234ebf284bd4b47bd8780e931c3f43dd,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234ebf284bd4b47bd8780e931c3f43dd, type: 3}
