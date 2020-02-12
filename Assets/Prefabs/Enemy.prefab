@@ -127,13 +127,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   idleSpeed: 2
-  chaseSpeed: 3
-  startChaseRadius: 8
-  stopChaseRadius: 15
+  chaseSpeed: 6
+  startChaseRadius: 20
+  stopChaseRadius: 25
   moveOnDistance: 1
 --- !u!1001 &7695656989288754423
 PrefabInstance:
@@ -142,6 +139,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7695656988750299197}
     m_Modifications:
+    - target: {fileID: 1368756993753427946, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 1368756993753427946, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1659836321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368756993753427946, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2425337527848150256, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
       propertyPath: m_Enabled
@@ -151,6 +163,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy Fish 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425337527848150270, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 84762867
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425337527848150270, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2425337527848150271, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
@@ -217,6 +239,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 2992296968323393880, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1659836321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992296968323393880, guid: c2c2960506aeb4bc4acb9b17fd964206,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4177658546943351772, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
       propertyPath: m_Constraints
