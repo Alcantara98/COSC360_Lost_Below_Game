@@ -7778,17 +7778,17 @@ PrefabInstance:
     - target: {fileID: 5549400800769762619, guid: 7da29a06f9a72ba438a57029fa79123d,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.066037714
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5549400800769762619, guid: 7da29a06f9a72ba438a57029fa79123d,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.066037714
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 5549400800769762619, guid: 7da29a06f9a72ba438a57029fa79123d,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.066037714
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 5549400800769762620, guid: 7da29a06f9a72ba438a57029fa79123d,
         type: 3}
@@ -20921,6 +20921,7 @@ GameObject:
   - component: {fileID: 946971936}
   - component: {fileID: 946971935}
   - component: {fileID: 946971938}
+  - component: {fileID: 946971939}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -20946,7 +20947,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.10297258, g: 0.15831551, b: 0.24528301, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.19607843, b: 0.19607843, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -21005,6 +21006,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0007aeaf8a8c47bfb5b6e4875cf6514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &946971939
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946971934}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ce0946a826f32402cb9e649a3b2e0577, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &956769558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2053475530304651317, guid: c664ae02e8a864fa391bb354b058fbf2,
@@ -36131,6 +36228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561ff652f692345ecb5d8ee3f53d17e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelToLoad: Level_2
 --- !u!1 &1594981963
 GameObject:
   m_ObjectHideFlags: 0
@@ -36676,12 +36774,12 @@ PrefabInstance:
     - target: {fileID: 3974827010777913968, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 48.87719
+      value: 9.427191
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010777913968, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 7.7343774
+      value: 1.2043774
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010884059527, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
