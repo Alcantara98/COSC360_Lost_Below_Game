@@ -1033,7 +1033,7 @@ PrefabInstance:
         type: 3}
       propertyPath: knife
       value: 
-      objectReference: {fileID: 1688381899}
+      objectReference: {fileID: 215577210}
     - target: {fileID: 7609551999223098764, guid: e15459d5a07504c6da3db71ed0136b27,
         type: 3}
       propertyPath: player
@@ -1965,6 +1965,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09b8c8c0aae2429d8f548e1c6054a25, type: 3}
+--- !u!1 &215577210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4080781269293577049, guid: a8e5377579b4848f0bf768d6f14ab997,
+    type: 3}
+  m_PrefabInstance: {fileID: 482135743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &237068955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4219568722267809720, guid: 59178f798d8004bb7acf97b5eeeeb3f0,
