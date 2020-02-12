@@ -42,18 +42,18 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (this.transform.rotation.eulerAngles.z > 10 && transform.rotation.eulerAngles.z < 170 && rightFacing)
         {
             this.transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
             rightFacing = false;
-        } else if (transform.rotation.eulerAngles.z > 190 && transform.rotation.eulerAngles.z < 350 && !rightFacing)
+        }
+        else if (transform.rotation.eulerAngles.z > 190 && transform.rotation.eulerAngles.z < 350 && !rightFacing)
         {
             this.transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
             rightFacing = true;
-            
+
         }
-        Debug.Log(Vector2.Distance(waypoints[waypointIndex].position, transform.position));
         if (Vector2.Distance(waypoints[waypointIndex].position, transform.position) < moveOnDistance && currentBehaviour == Behaviour.FollowPoints)
         {
             waypointIndex = (waypointIndex + 1) % waypoints.Length;
@@ -69,7 +69,6 @@ public class EnemyAI : MonoBehaviour
         }
         else if (distance > stopChaseRadius)
         {
-            Debug.Log("entered");
             currentBehaviour = Behaviour.FollowPoints;
             path.maxSpeed = idleSpeed;
             destinationScript.target = waypoints[waypointIndex];
