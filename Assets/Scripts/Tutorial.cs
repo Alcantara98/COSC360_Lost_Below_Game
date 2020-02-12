@@ -53,13 +53,19 @@ public class Tutorial : MonoBehaviour
                 if (player.transform.position.y > -3.76)
                 {
                     tutInt++;
-                    boulder.GetComponent<Rigidbody2D>().mass = defaultMass;
                 }
                 break;
             case 3:
-                if (player.transform.position.x > 34) tutInt++;
+                if (player.transform.position.y < -3.76)
+                {
+                    tutInt++;
+                    boulder.GetComponent<Rigidbody2D>().mass = defaultMass;
+                }
                 break;
             case 4:
+                if (player.transform.position.x > 34) tutInt++;
+                break;
+            case 5:
                 if (player.transform.position.x > 40.5)
                 {
                         if (timer >= 5f)
@@ -73,25 +79,34 @@ public class Tutorial : MonoBehaviour
                         }
                 }
                 break;
-            case 5:
+            case 6:
                 if (knife.activeSelf) tutInt++;
                 break;
-            case 6:
+            case 7:
                 if (player.transform.position.x > 39.5) tutInt++;
                 break;
-            case 7:
+            case 8:
                 if (player.transform.position.x > 43) tutInt++;
                 break;
-            case 8:
+            case 9:
                 if (Input.GetKey(KeyCode.G)) tutInt++;
                 break;
-            case 9:
-                if (timer >= 10f) tutInt++;
+            case 10:
+                if (timer >= 10f)
+                {
+                    tutInt++;
+                    Debug.Log(tut[tutInt].name);
+                }
                 else
                 {
                     timer += Time.deltaTime;
                     Debug.Log(timer);
                 }
+                break;
+            case 11:
+                if (Input.GetKey(KeyCode.Space)) tutInt++;
+                break;
+            case 12:
                 break;
             default:
                 tutInt++;
