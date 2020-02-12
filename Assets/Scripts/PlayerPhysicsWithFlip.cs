@@ -45,203 +45,204 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         //Flipping When looking right
-        if (horizontal < (previousHorizontal-0.1) && horizontal < -0.1) 
+        if (!pullingBoulder)
         {
-            justFlipped = true;
-            flipping = true;
-            if (flipping)
+                if (horizontal < (previousHorizontal-0.1) && horizontal < -0.1) 
             {
-                if (currentAnimation == 2)
+                justFlipped = true;
+                flipping = true;
+                if (flipping)
                 {
-                    anim.SetTrigger("Diver Swim to Flip");
-                }
-                else if(currentAnimation == 1)
-                {
-                    anim.SetTrigger("Diver Idle to Flip");
-                }
-                currentAnimation = 3;
+                    if (currentAnimation == 2)
+                    {
+                        anim.SetTrigger("Diver Swim to Flip");
+                    }
+                    else if(currentAnimation == 1)
+                    {
+                        anim.SetTrigger("Diver Idle to Flip");
+                    }
+                    currentAnimation = 3;
 
-                if (this.transform.rotation.eulerAngles.z >= 0 && this.transform.rotation.eulerAngles.z < 90)
-                {
-                    transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
-                    AngleSection = 1;
+                    if (this.transform.rotation.eulerAngles.z >= 0 && this.transform.rotation.eulerAngles.z < 90)
+                    {
+                        transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
+                        AngleSection = 1;
+                    }
+                    else if(this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
+                    {
+                        transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
+                        AngleSection = 4;
+                    }
                 }
-                else if(this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
+                if(AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
                 {
-                    transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
-                    AngleSection = 4;
+                    flipping = false;
+                    swimming = true;
+                    anim.SetTrigger("Diver Flip to Swim");
+                    currentAnimation = 2;
                 }
-            }
-            if(AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
-            {
-                flipping = false;
-                swimming = true;
-                anim.SetTrigger("Diver Flip to Swim");
-                currentAnimation = 2;
-            }
-            else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
-            {
-                flipping = false;
-                swimming = true;
-                anim.SetTrigger("Diver Flip to Swim");
-                currentAnimation = 2;
-            }
-        }
-        //Do this when in middle of flipping animation but player chooses to revert back to the same direction
-        else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
-        {
-            justFlipped = false;
-            flipping = false;
-            if (horizontal > 0.1)
-            {
-                swimming = true;
-                anim.SetTrigger("Diver Flip to Swim");
-                currentAnimation = 2;
-            }
-            else if(horizontal > -0.1 & horizontal < 0.1)
-            {
-                swimming = false;
-                anim.SetTrigger("Diver Flip to Idle");
-                currentAnimation = 1;
-            }
-        }
-
-        //Flipping when looking left
-        if (horizontal > (previousHorizontal + 0.1) && horizontal > 0.1)
-        {
-            justFlipped = true;
-            flipping = true;
-            if (flipping)
-            {
-                if (currentAnimation == 2)
+                else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
                 {
-                    anim.SetTrigger("Diver Swim to Flip");
-                }
-                else if (currentAnimation == 1)
-                {
-                    anim.SetTrigger("Diver Idle to Flip");
-                }
-                currentAnimation = 3;
-
-                if (this.transform.rotation.eulerAngles.z >= 0 && this.transform.rotation.eulerAngles.z < 90)
-                {
-                    transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
-                    AngleSection = 1;
-                }
-                else if (this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
-                {
-                    transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
-                    AngleSection = 4;
-                }
-            }
-            if (AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
-            {
-                flipping = false;
-                swimming = true;
-                anim.SetTrigger("Diver Flip to Swim");
-                currentAnimation = 2;
-            }
-            else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
-            {
-                flipping = false;
-                swimming = true;
-                anim.SetTrigger("Diver Flip to Swim");
-                currentAnimation = 2;
-            }
-        }
-        //Do this when in middle of flipping animation but player chooses to revert back to the same direction
-        else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
-        {
-            justFlipped = false;
-            flipping = false;
-            if (horizontal < -0.1)
-            {
-                swimming = true;
-                anim.SetTrigger("Diver Flip to Swim");
-                currentAnimation = 2;
-            }
-            else if (horizontal > -0.1 & horizontal < 0.1)
-            {
-                swimming = false;
-                anim.SetTrigger("Diver Flip to Idle");
-                currentAnimation = 1;
-            }
-        }
-
-        //Stop if Player if flipping in the y axis, wait for it to reach to 90 degrees then flip to make it look more natural
-        if (!flipping)
-        {
-            //Transition between animations
-            if (swimming == false && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
-            {
-                swimming = true;
-                if (!justFlipped)
-                {
-                    anim.SetTrigger("Diver Swim");
+                    flipping = false;
+                    swimming = true;
+                    anim.SetTrigger("Diver Flip to Swim");
                     currentAnimation = 2;
                 }
             }
-            if (swimming == true)
+            //Do this when in middle of flipping animation but player chooses to revert back to the same direction
+            else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
             {
-                if (Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+                justFlipped = false;
+                flipping = false;
+                if (horizontal > 0.1)
                 {
-                    if (currentAnimation == 2)
-                    {
-                        anim.SetTrigger("Diver Idle");
-                    }else if(currentAnimation == 3)
-                    {
-                        anim.SetTrigger("Diver Flip to Idle");
-                    }
-                    currentAnimation = 1;
-                    swimming = false;
-                    justFlipped = false;
+                    swimming = true;
+                    anim.SetTrigger("Diver Flip to Swim");
+                    currentAnimation = 2;
                 }
-                else if (Input.GetKeyUp(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+                else if(horizontal > -0.1 & horizontal < 0.1)
                 {
-                    if (currentAnimation == 2)
-                    {
-                        anim.SetTrigger("Diver Idle");
-                    }
-                    else if (currentAnimation == 3)
-                    {
-                        anim.SetTrigger("Diver Flip to Idle");
-                    }
-                    currentAnimation = 1;
                     swimming = false;
-                    justFlipped = false;
-                }
-                else if (Input.GetKeyUp(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
-                {
-                    if (currentAnimation == 2)
-                    {
-                        anim.SetTrigger("Diver Idle");
-                    }
-                    else if (currentAnimation == 3)
-                    {
-                        anim.SetTrigger("Diver Flip to Idle");
-                    }
+                    anim.SetTrigger("Diver Flip to Idle");
                     currentAnimation = 1;
-                    swimming = false;
-                    justFlipped = false;
-                }
-                else if (Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A))
-                {
-                    if (currentAnimation == 2)
-                    {
-                        anim.SetTrigger("Diver Idle");
-                    }
-                    else if (currentAnimation == 3)
-                    {
-                        anim.SetTrigger("Diver Flip to Idle");
-                    }
-                    currentAnimation = 1;
-                    swimming = false;
-                    justFlipped = false;
                 }
             }
 
-            if (!pullingBoulder)
+            //Flipping when looking left
+            if (horizontal > (previousHorizontal + 0.1) && horizontal > 0.1)
             {
+                justFlipped = true;
+                flipping = true;
+                if (flipping)
+                {
+                    if (currentAnimation == 2)
+                    {
+                        anim.SetTrigger("Diver Swim to Flip");
+                    }
+                    else if (currentAnimation == 1)
+                    {
+                        anim.SetTrigger("Diver Idle to Flip");
+                    }
+                    currentAnimation = 3;
+
+                    if (this.transform.rotation.eulerAngles.z >= 0 && this.transform.rotation.eulerAngles.z < 90)
+                    {
+                        transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
+                        AngleSection = 1;
+                    }
+                    else if (this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
+                    {
+                        transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
+                        AngleSection = 4;
+                    }
+                }
+                if (AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
+                {
+                    flipping = false;
+                    swimming = true;
+                    anim.SetTrigger("Diver Flip to Swim");
+                    currentAnimation = 2;
+                }
+                else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
+                {
+                    flipping = false;
+                    swimming = true;
+                    anim.SetTrigger("Diver Flip to Swim");
+                    currentAnimation = 2;
+                }
+            }
+            //Do this when in middle of flipping animation but player chooses to revert back to the same direction
+            else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
+            {
+                justFlipped = false;
+                flipping = false;
+                if (horizontal < -0.1)
+                {
+                    swimming = true;
+                    anim.SetTrigger("Diver Flip to Swim");
+                    currentAnimation = 2;
+                }
+                else if (horizontal > -0.1 & horizontal < 0.1)
+                {
+                    swimming = false;
+                    anim.SetTrigger("Diver Flip to Idle");
+                    currentAnimation = 1;
+                }
+            }
+
+            //Stop if Player if flipping in the y axis, wait for it to reach to 90 degrees then flip to make it look more natural
+            if (!flipping)
+            {
+                //Transition between animations
+                if (swimming == false && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+                {
+                    swimming = true;
+                    if (!justFlipped)
+                    {
+                        anim.SetTrigger("Diver Swim");
+                        currentAnimation = 2;
+                    }
+                }
+                if (swimming == true)
+                {
+                    if (Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+                    {
+                        if (currentAnimation == 2)
+                        {
+                            anim.SetTrigger("Diver Idle");
+                        }else if(currentAnimation == 3)
+                        {
+                            anim.SetTrigger("Diver Flip to Idle");
+                        }
+                        currentAnimation = 1;
+                        swimming = false;
+                        justFlipped = false;
+                    }
+                    else if (Input.GetKeyUp(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+                    {
+                        if (currentAnimation == 2)
+                        {
+                            anim.SetTrigger("Diver Idle");
+                        }
+                        else if (currentAnimation == 3)
+                        {
+                            anim.SetTrigger("Diver Flip to Idle");
+                        }
+                        currentAnimation = 1;
+                        swimming = false;
+                        justFlipped = false;
+                    }
+                    else if (Input.GetKeyUp(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+                    {
+                        if (currentAnimation == 2)
+                        {
+                            anim.SetTrigger("Diver Idle");
+                        }
+                        else if (currentAnimation == 3)
+                        {
+                            anim.SetTrigger("Diver Flip to Idle");
+                        }
+                        currentAnimation = 1;
+                        swimming = false;
+                        justFlipped = false;
+                    }
+                    else if (Input.GetKeyUp(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A))
+                    {
+                        if (currentAnimation == 2)
+                        {
+                            anim.SetTrigger("Diver Idle");
+                        }
+                        else if (currentAnimation == 3)
+                        {
+                            anim.SetTrigger("Diver Flip to Idle");
+                        }
+                        currentAnimation = 1;
+                        swimming = false;
+                        justFlipped = false;
+                    }
+                }
+
+            
                 // Player movement from input (it's a variable between -1 and 1) for
                 // degree of left or right movement
 

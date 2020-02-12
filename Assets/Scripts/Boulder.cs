@@ -10,7 +10,7 @@ public class Boulder : MonoBehaviour
     public float grabRadius = 3.0f;
     public GameObject grid;
     PlayerPhysicsWithFlip playerScript;
-
+    public bool canPull = false;
     Vector3 previousPos;
     float updateTimer = 30;
     AstarPath StarGrid;
@@ -48,19 +48,23 @@ public class Boulder : MonoBehaviour
         // When player is close enough to boulder and presses button, enables joint and keeps it
         // at current offset. Disables joint again when button released
         Debug.Log(Vector2.Distance(player.position, transform.position));
-        if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)
+        if (canPull)
         {
-            joint.linearOffset = player.position - transform.position;
-            joint.enabled = true;
-            playerScript.pullingBoulder = true;
-            origionalSpeed = playerScript.speed;
-            playerScript.speed *= 5.0f;
+            if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)
+            {
+                joint.linearOffset = player.position - transform.position;
+                joint.enabled = true;
+                playerScript.pullingBoulder = true;
+                //origionalSpeed = playerScript.speed;
+                //playerScript.speed *= 5.0f;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                //playerScript.speed = origionalSpeed;
+                joint.enabled = false;
+                playerScript.pullingBoulder = false;
+            }
         }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            playerScript.speed = origionalSpeed;
-            joint.enabled = false;
-            playerScript.pullingBoulder = false;
-        }
+        
     }
 }
