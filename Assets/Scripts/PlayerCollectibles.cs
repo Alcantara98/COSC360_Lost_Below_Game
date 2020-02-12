@@ -56,7 +56,7 @@ public class PlayerCollectibles : MonoBehaviour
         if (collider.gameObject.tag == "Glow")
         {
             nglow++;
-            collider.gameObject.SetActive(true);
+            collider.gameObject.SetActive(false);
         }
     }
 
