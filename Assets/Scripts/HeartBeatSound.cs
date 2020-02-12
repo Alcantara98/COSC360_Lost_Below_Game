@@ -15,12 +15,13 @@ public class HeartBeatSound : MonoBehaviour
     public float mediumHeartBeat;
     public float fastHeartBeat;
     public float heartAttackBeat;
+
     // Start is called before the first frame update
     void Start()
     {
         Application.targetFrameRate = 1;
         audioSource.GetComponents<AudioSource>();
-        audioSource.PlayOneShot(heartBeat_Whole, 1);
+        //audioSource.PlayOneShot(heartBeat_Whole, 1);
         timePassed = 0.5f;
     }
 
@@ -28,25 +29,28 @@ public class HeartBeatSound : MonoBehaviour
     void Update()
     {
         timePassed += Time.deltaTime;
-        if(PlayerOxygen.TankAir/PlayerOxygen.TankSize < 0.15f && timePassed > heartAttackBeat)
+        if(PlayerOxygen.TankAir/PlayerOxygen.TankSize < 0.1f && timePassed > heartAttackBeat)
         {
             audioSource.PlayOneShot(heartBeat_First, 1);
             timePassed = 0;
         }
-        else if (PlayerOxygen.TankAir / PlayerOxygen.TankSize < 0.35f && timePassed > fastHeartBeat)
+        else if (PlayerOxygen.TankAir / PlayerOxygen.TankSize < 0.25f && timePassed > fastHeartBeat)
         {
             audioSource.PlayOneShot(heartBeat_First, 1);
             timePassed = 0;
         }
-        else if (PlayerOxygen.TankAir / PlayerOxygen.TankSize < 0.6f && timePassed > mediumHeartBeat)
+        
+        else if (PlayerOxygen.TankAir / PlayerOxygen.TankSize < 0.4f && timePassed > mediumHeartBeat)
         {
             audioSource.PlayOneShot(heartBeat_Whole, 1);
             timePassed = 0;
         }
+        /*
         else if (timePassed > slowHeartBeat)
         {
             audioSource.PlayOneShot(heartBeat_Whole, 1);
             timePassed = 0;
         }
+        */
     }
 }
