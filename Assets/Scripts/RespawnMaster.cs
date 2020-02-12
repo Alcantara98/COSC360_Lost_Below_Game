@@ -13,19 +13,16 @@ public class RespawnMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (originalKnife == null)
             originalKnife = GameObject.FindGameObjectsWithTag("Knife");
-
-        foreach (GameObject respawn in respawns)
-        {
-            Instantiate(respawnPrefab, respawn.transform.position, respawn.transform.rotation);
-        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        foreach (GameObject respawn in originalKnife)
+        {
+            Debug.Log(respawn.transform.position.x);
+        }
     }
 }
