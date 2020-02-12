@@ -12,8 +12,17 @@ public class RespawnMaster : MonoBehaviour
     public static GameObject[] checkKnife;
     public static GameObject[] checkVine;
     public static GameObject[] checkGlow;
+    public static Vector3 playerPos;
+    public static string sceneName;
 
-    private void Update()
+    void Start()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        playerPos = player.transform.position;
+        sceneName = SceneManager.GetActiveScene().name;
+    }
+
+    void Update()
     {
         if (Input.GetKeyUp(KeyCode.R)) RespawnMaster.Respawn();
     }
@@ -29,7 +38,10 @@ public class RespawnMaster : MonoBehaviour
 
     public static void Respawn()
     {
-        SceneManager.LoadScene("Respawn");
+        SceneManager.LoadScene(sceneName);
+
+        GameObject player = GameObject.FindWithTag("Player");
+        player.transform.position = playerPos;
 
         Debug.Log("re");
 
