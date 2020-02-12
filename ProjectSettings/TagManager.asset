@@ -60,6 +60,15 @@ TagManager:
   - name: Player
     uniqueID: 1397201067
     locked: 0
+  - name: Currents
+    uniqueID: 3401915403
+    locked: 0
+  - name: Boulders
+    uniqueID: 595717571
+    locked: 0
+  - name: Enemies
+    uniqueID: 1659836321
+    locked: 0
   - name: Walls
     uniqueID: 84762867
     locked: 0

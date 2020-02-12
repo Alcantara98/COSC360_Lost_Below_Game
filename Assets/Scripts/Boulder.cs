@@ -9,11 +9,12 @@ public class Boulder : MonoBehaviour
     Vector2 offset;
     public float grabRadius = 3.0f;
     public GameObject grid;
-    PlayerPhysics playerScript;
-
+    PlayerPhysicsWithFlip playerScript;
+    public bool canPull = false;
     Vector3 previousPos;
     float updateTimer = 30;
     AstarPath StarGrid;
+    float origionalSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Boulder : MonoBehaviour
         // disables the joint to the boulder by default
         joint.enabled = false;
         StarGrid = grid.GetComponent<AstarPath>();
-        playerScript = player.GetComponent<PlayerPhysics>();
+        playerScript = player.GetComponent<PlayerPhysicsWithFlip>();
     }
 
     // Update is called once per frame
@@ -37,7 +38,8 @@ public class Boulder : MonoBehaviour
             StarGrid.Scan();
             updateTimer = 20;
             previousPos = transform.position;
-        } else
+        }
+        else
         {
             updateTimer--;
         }
@@ -45,16 +47,24 @@ public class Boulder : MonoBehaviour
 
         // When player is close enough to boulder and presses button, enables joint and keeps it
         // at current offset. Disables joint again when button released
-        if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)
+        Debug.Log(Vector2.Distance(player.position, transform.position));
+        if (canPull)
         {
-            joint.linearOffset = player.position - transform.position;
-            joint.enabled = true;
-            playerScript.pullingBoulder = true;
+            if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)
+            {
+                joint.linearOffset = player.position - transform.position;
+                joint.enabled = true;
+                playerScript.pullingBoulder = true;
+                //origionalSpeed = playerScript.speed;
+                //playerScript.speed *= 5.0f;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                //playerScript.speed = origionalSpeed;
+                joint.enabled = false;
+                playerScript.pullingBoulder = false;
+            }
         }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            joint.enabled = false;
-            playerScript.pullingBoulder = false;
-        }
+        
     }
 }
