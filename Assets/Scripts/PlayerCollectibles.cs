@@ -31,6 +31,8 @@ public class PlayerCollectibles : MonoBehaviour
         }
 
         glowNum.text = " X " + nglow;
+
+        if (Input.GetKeyUp(KeyCode.R)) RespawnMaster.Respawn();
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -54,7 +56,7 @@ public class PlayerCollectibles : MonoBehaviour
         if (collider.gameObject.tag == "Glow")
         {
             nglow++;
-            collider.gameObject.SetActive(true);
+            collider.gameObject.SetActive(false);
         }
     }
 
