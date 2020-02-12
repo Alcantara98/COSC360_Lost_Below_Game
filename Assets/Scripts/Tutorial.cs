@@ -17,7 +17,7 @@ public class Tutorial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        defaultMass = boulder.GetComponent<Rigidbody2D>().mass;
+        defaultMass = boulder.GetComponent<Rigidbody2D>().drag;
     }
 
     // Update is called once per frame
@@ -46,7 +46,7 @@ public class Tutorial : MonoBehaviour
                 if (player.transform.position.x > 23)
                 {
                     tutInt++;
-                    boulder.GetComponent<Rigidbody2D>().mass = 100;
+                    boulder.GetComponent<Rigidbody2D>().drag = 100;
                 }
                 break;
             case 2:
@@ -59,7 +59,7 @@ public class Tutorial : MonoBehaviour
                 if (player.transform.position.y < -3.76)
                 {
                     tutInt++;
-                    boulder.GetComponent<Rigidbody2D>().mass = defaultMass;
+                    boulder.GetComponent<Rigidbody2D>().drag = defaultMass;
                 }
                 break;
             case 4:
