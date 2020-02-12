@@ -1736,7 +1736,7 @@ PrefabInstance:
     - target: {fileID: 5432731910547621897, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7695656988750299194, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -34267,6 +34267,11 @@ PrefabInstance:
       propertyPath: chaseSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4931453986488845954, guid: 742233bffe6ba41c8ad01c442d83ef75,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1.51
+      objectReference: {fileID: 0}
     - target: {fileID: 5432731910547621897, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -34275,7 +34280,12 @@ PrefabInstance:
     - target: {fileID: 5432731910547621897, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432731910547621897, guid: 742233bffe6ba41c8ad01c442d83ef75,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7695656988750299194, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -34341,6 +34351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661190066457002781, guid: 742233bffe6ba41c8ad01c442d83ef75,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742233bffe6ba41c8ad01c442d83ef75, type: 3}
@@ -36131,6 +36146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561ff652f692345ecb5d8ee3f53d17e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelToLoad: Level_2
 --- !u!1 &1594981963
 GameObject:
   m_ObjectHideFlags: 0
@@ -36518,7 +36534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1592350165, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: m_PointLightDistance
-      value: 5
+      value: 6.76
       objectReference: {fileID: 0}
     - target: {fileID: 1592350165, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -36531,6 +36547,18 @@ PrefabInstance:
     - target: {fileID: 1592350165, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.data[5]
       value: 1659836321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592350165, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592350165, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592350165, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.483
       objectReference: {fileID: 0}
     - target: {fileID: 1888218026, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: speed
@@ -36586,12 +36614,12 @@ PrefabInstance:
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.1
+      value: 49.03
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
