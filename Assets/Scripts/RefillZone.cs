@@ -12,6 +12,7 @@ public class RefillZone : MonoBehaviour
         {
             refilling = true;
             StartCoroutine("Refill");
+            RespawnMaster.CheckPoint();
         }
     }
 
