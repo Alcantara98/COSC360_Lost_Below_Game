@@ -19,11 +19,13 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     private bool flipping;
     private bool justFlipped;
     private int currentAnimation;//  1:Idle 2:Swim 3:Flip;
+    private int AngleSection; //1 2 3 4 quarters;
 
     float previousHorizontal;
 
     private void Start()
     {
+        AngleSection = 1;
         currentAnimation = 1;
         justFlipped = false;
         flipping = false;
@@ -42,6 +44,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        //Flipping When looking right
         if (horizontal < (previousHorizontal-0.1) && horizontal < 0) 
         {
             justFlipped = true;
@@ -57,12 +60,72 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     anim.SetTrigger("Diver Idle to Flip");
                 }
                 currentAnimation = 3;
-                transform.Rotate(new Vector3(0,0,1) * 180 * Time.deltaTime, Space.Self);
-                /*transform.rotation = Quaternion.Slerp(transform.rotation,
-                                             Quaternion.Euler(0, 0, 90),
-                                             3 * Time.deltaTime);*/
+
+                if (this.transform.rotation.eulerAngles.z >= 0 && this.transform.rotation.eulerAngles.z < 90)
+                {
+                    transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
+                    AngleSection = 1;
+                }
+                else if(this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z <= 360)
+                {
+                    transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
+                    AngleSection = 4;
+                }
             }
-            if(this.transform.rotation.z > 0.75)
+            if(AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
+            {
+                Debug.Log("Done Flipping");
+                flipping = false;
+                swimming = true;
+                anim.SetTrigger("Diver Flip to Swim");
+                currentAnimation = 2;
+            }
+            else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
+            {
+                Debug.Log("Done Flipping");
+                flipping = false;
+                swimming = true;
+                anim.SetTrigger("Diver Flip to Swim");
+                currentAnimation = 2;
+            }
+        }
+        //Flipping when looking left
+        if (horizontal > (previousHorizontal + 0.1) && horizontal > 0)
+        {
+            justFlipped = true;
+            flipping = true;
+            if (flipping)
+            {
+                if (currentAnimation == 2)
+                {
+                    anim.SetTrigger("Diver Swim to Flip");
+                }
+                else if (currentAnimation == 1)
+                {
+                    anim.SetTrigger("Diver Idle to Flip");
+                }
+                currentAnimation = 3;
+
+                if (this.transform.rotation.eulerAngles.z >= 0 && this.transform.rotation.eulerAngles.z < 90)
+                {
+                    transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
+                    AngleSection = 1;
+                }
+                else if (this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z <= 360)
+                {
+                    transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
+                    AngleSection = 4;
+                }
+            }
+            if (AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
+            {
+                Debug.Log("Done Flipping");
+                flipping = false;
+                swimming = true;
+                anim.SetTrigger("Diver Flip to Swim");
+                currentAnimation = 2;
+            }
+            else if (AngleSection == 4 && this.transform.rotation.eulerAngles.z < 270)
             {
                 Debug.Log("Done Flipping");
                 flipping = false;
