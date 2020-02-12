@@ -47,7 +47,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Flipping When looking right
         if (horizontal < (previousHorizontal-0.1) && horizontal < -0.1) 
         {
-            justFlipped = true;
+            //justFlipped = true;
             flipping = true;
             if (flipping)
             {
@@ -92,7 +92,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Do this when in middle of flipping animation but player chooses to revert back to the same direction
         else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
         {
-            justFlipped = true;
+            //justFlipped = true;
             Debug.Log("Done Flipping");
             flipping = false;
             swimming = true;
@@ -111,7 +111,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Flipping when looking left
         if (horizontal > (previousHorizontal + 0.1) && horizontal > 0.1)
         {
-            justFlipped = true;
+            //justFlipped = true;
             flipping = true;
             if (flipping)
             {
@@ -156,7 +156,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Do this when in middle of flipping animation but player chooses to revert back to the same direction
         else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
         {
-            justFlipped = true;
+            //justFlipped = true;
             Debug.Log("Done Flipping");
             flipping = false;
             swimming = true;
