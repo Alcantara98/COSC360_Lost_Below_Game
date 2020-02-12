@@ -22,12 +22,12 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level_2");
     }
 
     public void gtfo()
