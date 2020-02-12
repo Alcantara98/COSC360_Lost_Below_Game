@@ -45,7 +45,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         //Flipping When looking right
-        if (horizontal < (previousHorizontal-0.1) && horizontal < 0) 
+        if (horizontal < (previousHorizontal-0.1) && horizontal < -0.1) 
         {
             justFlipped = true;
             flipping = true;
@@ -89,8 +89,27 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                 currentAnimation = 2;
             }
         }
+        //Do this when in middle of flipping animation but player chooses to revert back to the same direction
+        else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
+        {
+            Debug.Log("Done Flipping");
+            flipping = false;
+            swimming = true;
+            if (horizontal > 0.5)
+            {
+                anim.SetTrigger("Diver Flip to Swim");
+                currentAnimation = 2;
+            }
+            else if(horizontal > -0.1 & horizontal < 0.1)
+            {
+                anim.SetTrigger("Diver Flip to Idle");
+                currentAnimation = 1;
+                justFlipped = false;
+            }
+        }
+
         //Flipping when looking left
-        if (horizontal > (previousHorizontal + 0.1) && horizontal > 0)
+        if (horizontal > (previousHorizontal + 0.1) && horizontal > 0.1)
         {
             justFlipped = true;
             flipping = true;
@@ -132,6 +151,24 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                 swimming = true;
                 anim.SetTrigger("Diver Flip to Swim");
                 currentAnimation = 2;
+            }
+        }
+        //Do this when in middle of flipping animation but player chooses to revert back to the same direction
+        else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
+        {
+            Debug.Log("Done Flipping");
+            flipping = false;
+            swimming = true;
+            if (horizontal > 0.5)
+            {
+                anim.SetTrigger("Diver Flip to Swim");
+                currentAnimation = 2;
+            }
+            else if (horizontal > -0.1 & horizontal < 0.1)
+            {
+                justFlipped = false;
+                anim.SetTrigger("Diver Flip to Idle");
+                currentAnimation = 1;
             }
         }
 
@@ -234,55 +271,55 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     }
                 }
 
-                if (vertical > 0 && horizontal > 0)
+                if (vertical > 0.1 && horizontal > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < 0 && horizontal > 0)
+                if (vertical < -0.1 && horizontal > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical > 0 && horizontal < 0)
+                if (vertical > 0.1 && horizontal < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < 0 && horizontal < 0)
+                if (vertical < -0.1 && horizontal < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, +45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if ((horizontal < 0 || horizontal > 0) && vertical > -0.01 && vertical < 0.01)
+                if ((horizontal < -0.1 || horizontal > 0.1) && vertical > -0.01 && vertical < 0.01)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 0),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
+                if (vertical > 0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 90),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0)
+                if (vertical < -0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -90),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical > 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
+                if (vertical > 0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -90),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < 0 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < 0)
+                if (vertical < -0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 90),
