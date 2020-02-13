@@ -47,7 +47,7 @@ public class Boulder : MonoBehaviour
 
         // When player is close enough to boulder and presses button, enables joint and keeps it
         // at current offset. Disables joint again when button released
-        Debug.Log(Vector2.Distance(player.position, transform.position));
+        //Debug.Log(Vector2.Distance(player.position, transform.position));
         if (canPull)
         {
             if (Input.GetMouseButtonDown(0) && Vector2.Distance(player.position, transform.position) < grabRadius)

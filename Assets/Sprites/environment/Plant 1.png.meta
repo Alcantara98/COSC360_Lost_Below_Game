@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: eb6a273de24a2da43a2bb150de300db9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4915407663376370344
+    second: Plant 1_0
+  - first:
+      213: 2465293419641058523
+    second: Plant 1_1
+  - first:
+      213: -2751751723133040355
+    second: Plant 1_2
+  - first:
+      213: -7207671923464326196
+    second: Plant 1_3
+  - first:
+      213: -340297652996181609
+    second: Plant 1_4
+  - first:
+      213: -5602019440893961881
+    second: Plant 1_5
+  - first:
+      213: 7533455305430776841
+    second: Plant 1_6
+  - first:
+      213: -2277513262358905124
+    second: Plant 1_7
+  - first:
+      213: -3943033421036687400
+    second: Plant 1_8
+  - first:
+      213: -4842162028677248216
+    second: Plant 1_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +100,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Plant 1_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 10
+        width: 2228
+        height: 3327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42424799d01aff145965e0f9a6b4f9dc
+      internalID: -4915407663376370344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_1
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 14
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a69bb49bd146946a24f94242dc6c2e
+      internalID: 2465293419641058523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_2
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e30b4ddc72f969488e800a51af7155c
+      internalID: -2751751723133040355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_3
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 15
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e5734778608a949a1ad99e0b841198
+      internalID: -7207671923464326196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_4
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 12
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8539d86fe60e74f9e1e0c1e865fceb
+      internalID: -340297652996181609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_5
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 9
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674879266db3a8549b3d5e5f27cf36d5
+      internalID: -5602019440893961881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_6
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 14
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cc62aa112ece542a691fe6f496b57e
+      internalID: 7533455305430776841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_7
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 0
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4998de483b8b6c4283dc5de1d7d007d
+      internalID: -2277513262358905124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_8
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 0
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd0266779622f242a86213813759815
+      internalID: -3943033421036687400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant 1_9
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 4
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435eacfe4e128b246b2c5cfa6b3bb211
+      internalID: -4842162028677248216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
