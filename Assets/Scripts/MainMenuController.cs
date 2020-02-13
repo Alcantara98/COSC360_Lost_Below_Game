@@ -5,15 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    public void LoadLevelSelector()
+    public void LoadLevelSelect()
     {
-        //SceneManager.LoadScene("level selector");
-        Debug.Log("Loading level selector");
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void LoadControls()
     {
         SceneManager.LoadScene("Controls");
-        Debug.Log("Loading controls...");
     }
+
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene("Level_1");
+    }
+
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("Level_2");
+    }
+
+    public void gtfo()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
 }
