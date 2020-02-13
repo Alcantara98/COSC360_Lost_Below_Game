@@ -26,6 +26,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     private int AngleSection; //1 2 3 4 quarters;
     private float gameOverTimer = -500;
     private bool gameOver = false;
+    private float horizontal;
 
     public GameObject explosion;
     float previousHorizontal;
@@ -60,20 +61,33 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
 
         // Player movement from input (it's a variable between -1 and 1) for
         // degree of left or right movement
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        float horizontalPhysics = Input.GetAxis("Horizontal");
+        float verticalPhysics = Input.GetAxis("Vertical");
         if (gameOver)
         {
-            horizontal = 0;
-            vertical = 0;
+            horizontalPhysics = 0;
+            verticalPhysics = 0;
         }
 
+        //Animation Part
+        if(Input.GetKey(KeyCode.D))
+        {
+            horizontal = 1;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            horizontal = -1;
+        }
+        else
+        {
+            horizontal = 0;
+        }
         //Flipping When looking right
         if (!pullingBoulder)
         {
             if (horizontal < (previousHorizontal - 0.1) && horizontal < -0.1)
             {
-                justFlipped = true;
+                //justFlipped = true;
                 flipping = true;
                 if (flipping)
                 {
@@ -116,7 +130,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             //Do this when in middle of flipping animation but player chooses to revert back to the same direction
             else if (flipping && horizontal > -0.1 && previousHorizontal > 0.1)
             {
-                justFlipped = false;
+                //justFlipped = false;
                 flipping = false;
                 if (horizontal > 0.1)
                 {
@@ -135,7 +149,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             //Flipping when looking left
             if (horizontal > (previousHorizontal + 0.1) && horizontal > 0.1)
             {
-                justFlipped = true;
+                //justFlipped = true;
                 flipping = true;
                 if (flipping)
                 {
@@ -178,7 +192,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             //Do this when in middle of flipping animation but player chooses to revert back to the same direction
             else if (flipping && horizontal < 0.1 && previousHorizontal < -0.1)
             {
-                justFlipped = false;
+                //justFlipped = false;
                 flipping = false;
                 if (horizontal < -0.1)
                 {
@@ -201,11 +215,12 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                 if (swimming == false && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
                 {
                     swimming = true;
-                    if (!justFlipped)
-                    {
+                    // if (!justFlipped)
+                    // {
+                    Debug.Log(previousHorizontal + "    " +  horizontal);
                         anim.SetTrigger("Diver Swim");
                         currentAnimation = 2;
-                    }
+                   // }
                 }
                 if (swimming == true)
                 {
@@ -293,55 +308,55 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     }
                 }
 
-                if (vertical > 0.1 && horizontal > 0.1)
+                if (verticalPhysics > 0.1 && horizontalPhysics > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < -0.1 && horizontal > 0.1)
+                if (verticalPhysics < -0.1 && horizontalPhysics > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical > 0.1 && horizontal < -0.1)
+                if (verticalPhysics > 0.1 && horizontalPhysics < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < -0.1 && horizontal < -0.1)
+                if (verticalPhysics < -0.1 && horizontalPhysics < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, +45),
                                          turnSpeed * Time.deltaTime);
                 }
-                if ((horizontal < -0.1 || horizontal > 0.1) && vertical > -0.01 && vertical < 0.01)
+                if ((horizontalPhysics < -0.1 || horizontalPhysics > 0.1) && verticalPhysics > -0.01 && verticalPhysics < 0.01)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 0),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical > 0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0.1)
+                if (verticalPhysics > 0.1 && horizontalPhysics > -0.01 && horizontalPhysics < 0.01 && previousHorizontal > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 90),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < -0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal > 0.1)
+                if (verticalPhysics < -0.1 && horizontalPhysics > -0.01 && horizontalPhysics < 0.01 && previousHorizontal > 0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -90),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical > 0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < -0.1)
+                if (verticalPhysics > 0.1 && horizontalPhysics > -0.01 && horizontalPhysics < 0.01 && previousHorizontal < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, -90),
                                          turnSpeed * Time.deltaTime);
                 }
-                if (vertical < -0.1 && horizontal > -0.01 && horizontal < 0.01 && previousHorizontal < -0.1)
+                if (verticalPhysics < -0.1 && horizontalPhysics > -0.01 && horizontalPhysics < 0.01 && previousHorizontal < -0.1)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation,
                                          Quaternion.Euler(0, 0, 90),
@@ -369,7 +384,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 90);
         **/
-        movement = new Vector2(horizontal, vertical);
+        movement = new Vector2(horizontalPhysics, verticalPhysics);
         player.AddForce(movement * speed * Time.deltaTime);
     }
 

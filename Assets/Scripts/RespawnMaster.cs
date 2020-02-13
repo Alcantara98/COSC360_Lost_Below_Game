@@ -74,7 +74,7 @@ public class RespawnMaster : MonoBehaviour
         playerNGlow = PlayerCollectibles.nglow;
         playerHasKnife = PlayerCollectibles.hasKnife;
 
-        Debug.Log("checked");
+        //Debug.Log("checked");
     }
 
     public static void Respawn()
