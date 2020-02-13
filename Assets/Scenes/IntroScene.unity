@@ -1706,6 +1706,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: current1
       objectReference: {fileID: 0}
+    - target: {fileID: 2683426151312015218, guid: e4569d735e6be47e583665be639d359a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6317368655678681242, guid: e4569d735e6be47e583665be639d359a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3227,7 +3232,7 @@ GameObject:
   - component: {fileID: 525369199}
   m_Layer: 0
   m_Name: Currents
-  m_TagString: Untagged
+  m_TagString: Current
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12982,6 +12987,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940060671345919088, guid: ce411dededcb542b588ccf62412ae00f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1940060671345919089, guid: ce411dededcb542b588ccf62412ae00f,
         type: 3}

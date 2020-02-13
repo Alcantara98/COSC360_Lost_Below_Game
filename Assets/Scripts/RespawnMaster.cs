@@ -10,8 +10,10 @@ public class RespawnMaster : MonoBehaviour
     public static GameObject[] originalGlow;
     public static GameObject[] originalBoulder;
     public static GameObject[] originalEnemy;
+    public static GameObject[] originalCurrent;
     public static Vector3[] oriBoulder;
     public static Vector3[] oriEnemy;
+    public static Vector3[] oriCurrent;
     public static GameObject[] checkKnife;
     public static GameObject[] checkVine;
     public static GameObject[] checkGlow;
@@ -26,20 +28,32 @@ public class RespawnMaster : MonoBehaviour
 
         originalBoulder = GameObject.FindGameObjectsWithTag("BoulderSquare");
         originalEnemy = GameObject.FindGameObjectsWithTag("Enemy");
-        oriBoulder = new Vector3[originalBoulder.Length];
-        oriEnemy = new Vector3[originalEnemy.Length];
+        originalCurrent = GameObject.FindGameObjectsWithTag("Current");
+        oriCurrent = new Vector3[originalCurrent.Length];
 
-        if (originalBoulder != null && originalEnemy != null)
+        if (originalBoulder != null)
         {
+            oriBoulder = new Vector3[originalBoulder.Length];
             for (int i = 0; i < originalBoulder.Length; i++)
             {
                 oriBoulder[i] = originalBoulder[i].transform.position;
             }
 
-
+        }
+        if (originalEnemy != null)
+        {
+            oriEnemy = new Vector3[originalEnemy.Length];
             for (int i = 0; i < originalEnemy.Length; i++)
             {
                 oriEnemy[i] = originalEnemy[i].transform.position;
+            }
+        }
+        if (originalCurrent != null)
+        {
+            oriCurrent = new Vector3[originalCurrent.Length];
+            for (int i = 0; i < originalCurrent.Length; i++)
+            {
+                oriCurrent[i] = originalCurrent[i].transform.position;
             }
         }
         playerPos = player.transform.position;
@@ -76,13 +90,24 @@ public class RespawnMaster : MonoBehaviour
         originalVine = GameObject.FindGameObjectsWithTag("Vine");
         originalGlow = GameObject.FindGameObjectsWithTag("Glow");
 
-        if (originalBoulder != null && originalEnemy != null)
+        if (originalBoulder != null )
         {
             for (int i = 0; i < originalBoulder.Length; i++)
             {
                 originalBoulder[i].transform.position = oriBoulder[i];
             }
+        }
 
+        if (originalCurrent != null)
+        {
+            for (int i = 0; i < originalCurrent.Length; i++)
+            {
+                originalCurrent[i].transform.position = oriCurrent[i];
+            }
+        }
+
+        if (originalEnemy != null)
+        {
             for (int i = 0; i < originalEnemy.Length; i++)
             {
                 originalEnemy[i].transform.position = oriEnemy[i];
