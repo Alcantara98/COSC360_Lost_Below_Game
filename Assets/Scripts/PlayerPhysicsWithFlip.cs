@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Pathfinding;
+using UnityEngine.SceneManagement;
 
 public class PlayerPhysicsWithFlip : MonoBehaviour
 {
@@ -12,6 +16,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     Rigidbody2D player;
     public float turnSpeed;
     public bool pullingBoulder = false;
+    public GameObject death;
 
     //For Animation Purposes
     public Animator anim;
@@ -20,7 +25,10 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     private bool justFlipped;
     private int currentAnimation;//  1:Idle 2:Swim 3:Flip;
     private int AngleSection; //1 2 3 4 quarters;
+    private float gameOverTimer = -500;
+    private bool gameOver = false;
 
+    public GameObject explosion;
     float previousHorizontal;
 
     private void Start()
@@ -39,10 +47,26 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameOverTimer > -500)
+        {
+            if (gameOverTimer > 0)
+            {
+                gameOverTimer -= Time.deltaTime;
+            } else
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+        }
+        
         // Player movement from input (it's a variable between -1 and 1) for
         // degree of left or right movement
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        if (gameOver)
+        {
+            horizontal = 0;
+            vertical = 0;
+        }
 
         //Flipping When looking right
         if (!pullingBoulder)
@@ -356,6 +380,31 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             player.AddForce(facing * boostSpeed);
             bTimer = boostCooldown;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
+            //Destroy(gameObject);
+            Destroy(collision.gameObject);
+            //yield return new WaitForSeconds(2);
+            gameOver = true;
+            gameOverTimer = 1.5f;
+            //gameObject.GetComponent<PlayerOxygen>().Deth();
+            //death.GetComponent<PlayerPhysicsWithFlip>().goToGameOver();
+            //goToGameOver();
+            //SceneManager.LoadScene("GameOver");
+
+        }
+    }
+
+    IEnumerator goToGameOver()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Main Menu");
     }
 
 }

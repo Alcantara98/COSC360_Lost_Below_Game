@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField]
     private Transform[] waypoints = null;
 
+    public GameObject player;
     public float idleSpeed = 2;
     public float chaseSpeed = 3;
 
@@ -27,11 +29,13 @@ public class EnemyAI : MonoBehaviour
     Behaviour currentBehaviour;
     int waypointIndex;
     Transform target;
+    public GameObject explosion;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         currentBehaviour = Behaviour.FollowPoints;
         target = GameObject.Find("Player").transform;
         destinationScript = transform.GetComponent<AIDestinationSetter>();
@@ -73,7 +77,9 @@ public class EnemyAI : MonoBehaviour
             path.maxSpeed = idleSpeed;
             destinationScript.target = waypoints[waypointIndex];
         }
-
-
     }
+
+    
+    
+
 }
