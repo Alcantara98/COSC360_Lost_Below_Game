@@ -17,7 +17,7 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadTutorial()
     {
-        SceneManager.LoadScene("Controls");
+        SceneManager.LoadScene("IntroScene");
     }
 
     public void LoadLevel1()
