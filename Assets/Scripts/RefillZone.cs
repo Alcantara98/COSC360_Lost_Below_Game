@@ -13,7 +13,10 @@ public class RefillZone : MonoBehaviour
             refilling = true;
             StartCoroutine("Refill");
             RespawnMaster.CheckPoint();
-            RespawnMaster.playerPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 1, gameObject.transform.position.z);
+            RespawnMaster.playerPos.y = gameObject.transform.position.y - 6;
+            RespawnMaster.playerPos.x = gameObject.transform.position.x;
+            Debug.Log(RespawnMaster.playerPos.y);
+            Debug.Log(gameObject.transform.position.y);
         }
     }
 

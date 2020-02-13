@@ -14,6 +14,7 @@ TagManager:
   - Refill
   - Vine
   - Glow
+  - Enemy
   layers:
   - Default
   - TransparentFX
