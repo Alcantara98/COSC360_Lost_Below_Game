@@ -13,7 +13,7 @@ public class Boulder : MonoBehaviour
     public bool canPull = false;
     Vector3 previousPos;
     float updateTimer = 30;
-    AstarPath StarGrid;
+    // AstarPath StarGrid;
     float origionalSpeed;
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class Boulder : MonoBehaviour
         //grid = GameObject.Find("Grid").GetComponent<AstarPath>();
         // disables the joint to the boulder by default
         joint.enabled = false;
-        StarGrid = grid.GetComponent<AstarPath>();
+        // StarGrid = grid.GetComponent<AstarPath>();
         playerScript = player.GetComponent<PlayerPhysicsWithFlip>();
     }
 
@@ -35,7 +35,7 @@ public class Boulder : MonoBehaviour
     {
         if (updateTimer <= 0 && previousPos != transform.position)
         {
-            StarGrid.Scan();
+            // StarGrid.Scan();
             updateTimer = 20;
             previousPos = transform.position;
         }
@@ -65,6 +65,6 @@ public class Boulder : MonoBehaviour
                 playerScript.pullingBoulder = false;
             }
         }
-        
+
     }
 }

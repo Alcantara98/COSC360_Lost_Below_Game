@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
 using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
@@ -14,13 +13,15 @@ public class EnemyController : MonoBehaviour
     public float chaseSpeed = 2;
     public float directFollow = 3;
 
-    enum Behaviour
+    public enum Behaviour
     {
         ChasePlayer,
         FollowPoints,
-        ReturnToPatrolArea
+        ReturnToPatrolArea,
+        Idle
     }
-    Behaviour currentBehaviour;
+    public Behaviour currentBehaviour = Behaviour.Idle;
+
 
     int waypointIndex;
 
@@ -49,7 +50,6 @@ public class EnemyController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        currentBehaviour = Behaviour.FollowPoints;
         target = GameObject.Find("Player");
 
         //Get the reference to object's AStarPathfinder component
@@ -150,14 +150,21 @@ public class EnemyController : MonoBehaviour
         // when entering the collider of a waypoint, start start going to the next one
         if (collision.gameObject.tag == "Waypoint")
         {
-            if (currentBehaviour == Behaviour.FollowPoints)
+            if (waypoints.Length == 1 && currentBehaviour == Behaviour.ReturnToPatrolArea)
             {
-                waypointIndex = (waypointIndex + 1) % waypoints.Length;
+                currentBehaviour = Behaviour.Idle;
             }
-            else if (currentBehaviour == Behaviour.ReturnToPatrolArea)
+            else
             {
-                currentBehaviour = Behaviour.FollowPoints;
-                waypointIndex = (waypointIndex + 1) % waypoints.Length;
+                if (currentBehaviour == Behaviour.FollowPoints)
+                {
+                    waypointIndex = (waypointIndex + 1) % waypoints.Length;
+                }
+                else if (currentBehaviour == Behaviour.ReturnToPatrolArea)
+                {
+                    currentBehaviour = Behaviour.FollowPoints;
+                    waypointIndex = (waypointIndex + 1) % waypoints.Length;
+                }
             }
         }
     }
