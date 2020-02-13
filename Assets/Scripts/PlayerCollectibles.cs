@@ -12,7 +12,7 @@ public class PlayerCollectibles : MonoBehaviour
     public GameObject glowInstance;
 
     //number of glowsticks
-    public int nglow = 3;
+    public static int nglow = 3;
 
     public TextMeshProUGUI glowNum;
 
@@ -63,7 +63,6 @@ public class PlayerCollectibles : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-
         if (collision.gameObject.tag == "Vine")
         {
 
@@ -75,7 +74,6 @@ public class PlayerCollectibles : MonoBehaviour
                     collision.gameObject.SetActive(false);
                 }
             }
-
         }
     }
 

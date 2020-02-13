@@ -7,18 +7,23 @@ using TMPro;
 public class Tutorial : MonoBehaviour
 {
     public GameObject []tut;
-    private int tutInt = 0;
+    public int tutInt = 0;
     private float defaultMass;
     private float timer = 0f;
 
     public GameObject player;
     public GameObject boulder;
     public GameObject knife;
+    public GameObject glow;
+    public GameObject glowStick;
     // Start is called before the first frame update
     void Start()
     {
         defaultMass = boulder.GetComponent<Rigidbody2D>().drag;
         knife.SetActive(false);
+        glow.SetActive(false);
+        PlayerCollectibles.nglow = 0;
+        glowStick.SetActive(false);
     }
 
     // Update is called once per frame
@@ -88,7 +93,13 @@ public class Tutorial : MonoBehaviour
                 if (player.transform.position.x > 39.5) tutInt++;
                 break;
             case 8:
-                if (player.transform.position.x > 43) tutInt++;
+                if (player.transform.position.x > 43)
+                {
+                    tutInt++;
+                    glow.SetActive(true);
+                    glowStick.SetActive(true);
+                    PlayerCollectibles.nglow = 3;
+                }
                 break;
             case 9:
                 if (Input.GetKey(KeyCode.G)) tutInt++;

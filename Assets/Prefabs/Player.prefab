@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 1888218024}
   - component: {fileID: 1888218025}
   - component: {fileID: 1888218026}
+  - component: {fileID: 7656363404851056156}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -423,6 +424,22 @@ MonoBehaviour:
   turnSpeed: 2
   pullingBoulder: 0
   anim: {fileID: 0}
+--- !u!70 &7656363404851056156
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974827010581338337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 8, y: 4}
+  m_Direction: 1
 --- !u!1 &5346964515408387024
 GameObject:
   m_ObjectHideFlags: 0
