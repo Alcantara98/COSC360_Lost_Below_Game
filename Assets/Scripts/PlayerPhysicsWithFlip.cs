@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
 using UnityEngine.SceneManagement;
 
 public class PlayerPhysicsWithFlip : MonoBehaviour
@@ -53,12 +52,13 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             if (gameOverTimer > 0)
             {
                 gameOverTimer -= Time.deltaTime;
-            } else
+            }
+            else
             {
                 SceneManager.LoadScene("GameOver");
             }
         }
-        
+
         // Player movement from input (it's a variable between -1 and 1) for
         // degree of left or right movement
         float horizontalPhysics = Input.GetAxis("Horizontal");
@@ -85,7 +85,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         //Flipping When looking right
         if (!pullingBoulder)
         {
-                if (horizontal < (previousHorizontal-0.1) && horizontal < -0.1) 
+            if (horizontal < (previousHorizontal - 0.1) && horizontal < -0.1)
             {
                 //justFlipped = true;
                 flipping = true;
@@ -95,7 +95,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     {
                         anim.SetTrigger("Diver Swim to Flip");
                     }
-                    else if(currentAnimation == 1)
+                    else if (currentAnimation == 1)
                     {
                         anim.SetTrigger("Diver Idle to Flip");
                     }
@@ -106,13 +106,13 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                         transform.Rotate(new Vector3(0, 0, 1) * 180 * Time.deltaTime, Space.Self);
                         AngleSection = 1;
                     }
-                    else if(this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
+                    else if (this.transform.rotation.eulerAngles.z > 270 && this.transform.rotation.eulerAngles.z < 360)
                     {
                         transform.Rotate(new Vector3(0, 0, -1) * 180 * Time.deltaTime, Space.Self);
                         AngleSection = 4;
                     }
                 }
-                if(AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
+                if (AngleSection == 1 && this.transform.rotation.eulerAngles.z > 90)
                 {
                     flipping = false;
                     swimming = true;
@@ -138,7 +138,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     anim.SetTrigger("Diver Flip to Swim");
                     currentAnimation = 2;
                 }
-                else if(horizontal > -0.1 & horizontal < 0.1)
+                else if (horizontal > -0.1 & horizontal < 0.1)
                 {
                     swimming = false;
                     anim.SetTrigger("Diver Flip to Idle");
@@ -229,7 +229,8 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                         if (currentAnimation == 2)
                         {
                             anim.SetTrigger("Diver Idle");
-                        }else if(currentAnimation == 3)
+                        }
+                        else if (currentAnimation == 3)
                         {
                             anim.SetTrigger("Diver Flip to Idle");
                         }
@@ -281,7 +282,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
                     }
                 }
 
-            
+
                 // Player movement from input (it's a variable between -1 and 1) for
                 // degree of left or right movement
 

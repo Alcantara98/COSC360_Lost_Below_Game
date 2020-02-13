@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
 using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
@@ -16,8 +15,8 @@ public class EnemyAI : MonoBehaviour
     // radius to start and stop chasing player
     public float startChaseRadius = 8;
     public float stopChaseRadius = 15;
-    AIDestinationSetter destinationScript;
-    AIPath path;
+    // AIDestinationSetter destinationScript;
+    // AIPath path;
     private bool rightFacing = false;
     public float moveOnDistance = 1;
 
@@ -38,9 +37,9 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player");
         currentBehaviour = Behaviour.FollowPoints;
         target = GameObject.Find("Player").transform;
-        destinationScript = transform.GetComponent<AIDestinationSetter>();
-        destinationScript.target = waypoints[waypointIndex];
-        path = transform.GetComponent<AIPath>();
+        // destinationScript = transform.GetComponent<AIDestinationSetter>();
+        // destinationScript.target = waypoints[waypointIndex];
+        // path = transform.GetComponent<AIPath>();
     }
 
     // Update is called once per frame
@@ -61,25 +60,25 @@ public class EnemyAI : MonoBehaviour
         if (Vector2.Distance(waypoints[waypointIndex].position, transform.position) < moveOnDistance && currentBehaviour == Behaviour.FollowPoints)
         {
             waypointIndex = (waypointIndex + 1) % waypoints.Length;
-            destinationScript.target = waypoints[waypointIndex];
+            // destinationScript.target = waypoints[waypointIndex];
         }
         float distance = Vector2.Distance(target.position, transform.position);
         //Debug.Log(distance);
         if (distance < startChaseRadius && currentBehaviour != Behaviour.ChasePlayer)
         {
-            path.maxSpeed = chaseSpeed;
+            // path.maxSpeed = chaseSpeed;
             currentBehaviour = Behaviour.ChasePlayer;
-            destinationScript.target = target;
+            // destinationScript.target = target;
         }
         else if (distance > stopChaseRadius)
         {
             currentBehaviour = Behaviour.FollowPoints;
-            path.maxSpeed = idleSpeed;
-            destinationScript.target = waypoints[waypointIndex];
+            // path.maxSpeed = idleSpeed;
+            // destinationScript.target = waypoints[waypointIndex];
         }
     }
 
-    
-    
+
+
 
 }
