@@ -31,8 +31,6 @@ public class PlayerCollectibles : MonoBehaviour
         }
 
         glowNum.text = " X " + nglow;
-
-        if (Input.GetKeyUp(KeyCode.R)) RespawnMaster.Respawn();
     }
 
     void OnTriggerEnter2D(Collider2D collider)
