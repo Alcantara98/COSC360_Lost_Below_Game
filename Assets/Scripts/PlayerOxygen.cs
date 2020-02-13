@@ -51,7 +51,7 @@ public class PlayerOxygen : MonoBehaviour
         return false;
     }
 
-    IEnumerator Deth()
+    public IEnumerator Deth()
     {
         yield return new WaitForSeconds(2);
 
