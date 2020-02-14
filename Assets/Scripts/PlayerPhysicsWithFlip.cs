@@ -399,7 +399,8 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            Instantiate(explosion, transform.position, Quaternion.identity);
+            GameObject explosionInstance = Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(explosionInstance, 2);
             //Destroy(gameObject);
             //Destroy(gameObject);
             collision.gameObject.SetActive(false);
