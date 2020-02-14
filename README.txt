@@ -8,6 +8,8 @@ Sam Davies
  
 OVERVIEW 
 Lost Below is an atmospheric underwater survival game. You play as a lost diver, alone in an unforgiving alien cave system. Explore claustrophobic caves, encounter alien fish, manage your oxygen and maneuver through other obstacles that may block your way to the surface and safety. 
+
+NOTE: FPS drops when played in full screen.
  
 CONTROLS 
 WASD to move 
