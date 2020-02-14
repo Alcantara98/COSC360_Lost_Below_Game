@@ -43,6 +43,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         bTimer = 1.0f;
         player = transform.GetComponent<Rigidbody2D>();
         oxygen = transform.GetComponent<PlayerOxygen>();
+        //Application.targetFrameRate = 60;
     }
     // Update is called once per frame
     void Update()
