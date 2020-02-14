@@ -55,7 +55,9 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else
             {
+                gameOverTimer = -500;
                 RespawnMaster.Respawn();
+                
             }
         }
 

@@ -28,14 +28,15 @@ public class Boulder : MonoBehaviour
         joint.enabled = false;
         // StarGrid = grid.GetComponent<AstarPath>();
         playerScript = player.GetComponent<PlayerPhysicsWithFlip>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (updateTimer <= 0 && previousPos != transform.position)
+        if (updateTimer <= 0 && previousPos != transform.position && grid != null)
         {
-            // StarGrid.Scan();
+            grid.GetComponent<AStarGrid>().CreateMap();
             updateTimer = 20;
             previousPos = transform.position;
         }

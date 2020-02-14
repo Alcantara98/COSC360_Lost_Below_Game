@@ -45630,6 +45630,11 @@ PrefabInstance:
       propertyPath: glowNum
       value: 
       objectReference: {fileID: 154866226}
+    - target: {fileID: 2766416185625997811, guid: f1a6b44d6472942418e0f31929bd195f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3974827009579422965, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -61195,7 +61200,7 @@ PrefabInstance:
         type: 3}
       propertyPath: grid
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1526862794}
     - target: {fileID: 9031931539070045138, guid: f225dd8c175c35a42a7009c808e3d8ea,
         type: 3}
       propertyPath: m_Enabled
@@ -61206,10 +61211,30 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 1053221962}
+    - target: {fileID: 9031931539070045139, guid: f225dd8c175c35a42a7009c808e3d8ea,
+        type: 3}
+      propertyPath: m_AutoConfigureOffset
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9031931539070045141, guid: f225dd8c175c35a42a7009c808e3d8ea,
         type: 3}
       propertyPath: m_Name
       value: Boulder Square
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031931539070045143, guid: f225dd8c175c35a42a7009c808e3d8ea,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031931539070045143, guid: f225dd8c175c35a42a7009c808e3d8ea,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031931539070045143, guid: f225dd8c175c35a42a7009c808e3d8ea,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f225dd8c175c35a42a7009c808e3d8ea, type: 3}
