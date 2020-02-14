@@ -18,6 +18,7 @@ public class ReleaseBoulder : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("@@@@@@@@@@@@@@");
             Boulder.gravityScale = gravity;
         }
     }
