@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField]
-    private Transform[] waypoints = null;
+    private Vector3[] waypoints = null;
 
     public float turnSpeed = 2;
     public float idleSpeed = 1;
@@ -55,6 +55,10 @@ public class EnemyController : MonoBehaviour
         //Get the reference to object's AStarPathfinder component
         pathfinder = transform.GetComponent<AStarPathfinder>();
         pathWayPoint = transform.GetComponent<AStarPathfinder>();
+        if (waypoints == null)
+        {
+            waypoints = new Vector3[] { transform.position };
+        }
     }
 
     // Update is called once per frame
@@ -80,7 +84,7 @@ public class EnemyController : MonoBehaviour
                 FollowWayPoints();
                 break;
             case Behaviour.ReturnToPatrolArea:
-                pathfinder.GoTowards(waypoints[waypointIndex].position, idleSpeed);
+                pathfinder.GoTowards(waypoints[waypointIndex], idleSpeed);
                 break;
         }
     }
@@ -120,7 +124,7 @@ public class EnemyController : MonoBehaviour
             // If enemy reached last waypoint then it stops
 
             // finds required angle for fish to face next waypoint and turns it into a Euler angle
-            Vector2 difference = transform.position - waypoints[waypointIndex].position;
+            Vector2 difference = transform.position - waypoints[waypointIndex];
             float targetAngle = Vector2.Angle(Vector2.up, difference);
             if (difference.x > 0)
             {
