@@ -56,7 +56,9 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("GameOver");
+                gameOverTimer = -500;
+                RespawnMaster.Respawn();
+                //SceneManager.LoadScene("GameOver");
             }
         }
 
@@ -406,10 +408,11 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             //Destroy(gameObject);
             //Destroy(gameObject);
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
+            //Destroy(collision.gameObject);
             //yield return new WaitForSeconds(2);
             gameOver = true;
-            gameOverTimer = 1.5f;
+            gameOverTimer = 0.4f;
             //gameObject.GetComponent<PlayerOxygen>().Deth();
             //death.GetComponent<PlayerPhysicsWithFlip>().goToGameOver();
             //goToGameOver();
