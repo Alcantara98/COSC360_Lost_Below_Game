@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class RespawnMaster : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class RespawnMaster : MonoBehaviour
     public static string sceneName;
     public static int playerNGlow;
     public static bool playerHasKnife;
+    public static int playerLife = 3;
+    public TextMeshProUGUI lifeNum;
 
     void Start()
     {
@@ -63,6 +66,7 @@ public class RespawnMaster : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.R)) RespawnMaster.Respawn();
+        lifeNum.text = " X " + playerLife;
     }
 
     public static void CheckPoint()
@@ -79,6 +83,12 @@ public class RespawnMaster : MonoBehaviour
 
     public static void Respawn()
     {
+        playerLife--;
+        if (playerLife == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+
         Debug.Log("hi");
         //SceneManager.LoadScene(sceneName);
 
