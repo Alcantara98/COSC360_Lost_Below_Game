@@ -77,7 +77,7 @@ public class PlayerCollectibles : MonoBehaviour
 
     public void DropGlowstick()
     {
-        glowInstance = Instantiate(glowstick, transform.position + new Vector3(0, -0.2f, 0), Quaternion.identity);
+        glowInstance = Instantiate(glowstick, transform.position + new Vector3(1.5f, -1f, 0), Quaternion.identity);
         nglow--;
         Destroy(glowInstance, 30);
     }
