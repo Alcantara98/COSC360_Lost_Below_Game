@@ -400,7 +400,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             //Destroy(gameObject);
             //Destroy(gameObject);
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             //yield return new WaitForSeconds(2);
             gameOverTimer = 0.4f;
             //gameObject.GetComponent<PlayerOxygen>().Deth();

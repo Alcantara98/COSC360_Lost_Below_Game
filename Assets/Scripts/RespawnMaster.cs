@@ -79,6 +79,7 @@ public class RespawnMaster : MonoBehaviour
 
     public static void Respawn()
     {
+        Debug.Log("hi");
         //SceneManager.LoadScene(sceneName);
 
         GameObject player = GameObject.FindWithTag("Player");
@@ -111,6 +112,8 @@ public class RespawnMaster : MonoBehaviour
             for (int i = 0; i < originalEnemy.Length; i++)
             {
                 originalEnemy[i].transform.position = oriEnemy[i];
+                originalEnemy[i].GetComponent<EnemyController>().currentBehaviour = EnemyController.Behaviour.Idle;
+                    //originalEnemy[i].GetComponent<EnemyController>().defaultBehaviour;
             }
         }
 
