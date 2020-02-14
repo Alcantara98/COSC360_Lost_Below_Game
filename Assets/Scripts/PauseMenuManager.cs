@@ -50,6 +50,8 @@ public class PauseMenuManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
-        Debug.Log("Loading menu...");
+        PlayerCollectibles.nglow = 3;
+        PlayerCollectibles.hasKnife = false;
+            Debug.Log("Loading menu...");
     }
 }
