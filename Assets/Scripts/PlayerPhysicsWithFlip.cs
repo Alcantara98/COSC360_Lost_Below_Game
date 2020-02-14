@@ -409,7 +409,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             Destroy(collision.gameObject);
             //yield return new WaitForSeconds(2);
             gameOver = true;
-            gameOverTimer = 1.5f;
+            gameOverTimer = 0.4f;
             //gameObject.GetComponent<PlayerOxygen>().Deth();
             //death.GetComponent<PlayerPhysicsWithFlip>().goToGameOver();
             //goToGameOver();
