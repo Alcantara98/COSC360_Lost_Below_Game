@@ -7140,7 +7140,7 @@ PrefabInstance:
     - target: {fileID: 3308519406369880921, guid: d658093f72a6b4143a345458f47b7c64,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3308519406369880921, guid: d658093f72a6b4143a345458f47b7c64,
         type: 3}
@@ -14203,6 +14203,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 69.61
       objectReference: {fileID: 0}
+    - target: {fileID: 6892058658107247491, guid: 27c08bc1e42a8f141a94ab8b5bb90fb8,
+        type: 3}
+      propertyPath: LevelToLoad
+      value: End
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c08bc1e42a8f141a94ab8b5bb90fb8, type: 3}
 --- !u!1 &714934873
@@ -15969,7 +15974,7 @@ PrefabInstance:
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
@@ -27801,7 +27806,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1354184570
 GameObject:
@@ -33251,7 +33256,7 @@ PrefabInstance:
     - target: {fileID: 2053475530304651317, guid: c664ae02e8a864fa391bb354b058fbf2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2053475530304651317, guid: c664ae02e8a864fa391bb354b058fbf2,
         type: 3}
@@ -39209,7 +39214,7 @@ PrefabInstance:
     - target: {fileID: 3423067922780860813, guid: 3865a95fa1dae4c6f95c7276d8ef3bc4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3423067922780860813, guid: 3865a95fa1dae4c6f95c7276d8ef3bc4,
         type: 3}
