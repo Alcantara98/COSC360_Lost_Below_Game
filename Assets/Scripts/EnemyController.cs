@@ -55,7 +55,7 @@ public class EnemyController : MonoBehaviour
         //Get the reference to object's AStarPathfinder component
         pathfinder = transform.GetComponent<AStarPathfinder>();
         pathWayPoint = transform.GetComponent<AStarPathfinder>();
-        if (waypoints == null)
+        if (waypoints.Length == 0)
         {
             waypoints = new Vector3[] { transform.position };
         }
