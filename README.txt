@@ -20,7 +20,7 @@ KNOWN ISSUES
 Uncommon bugs: 
 Glowsticks may become stuck in the diver’s torso when dropped at specific angles. 
 The player must mash F to cut vines as the colliders are buggy. 
-Extremely rare bugs: 
+Rare bugs: 
 Player may spawn outside boundaries.  
 Enemies may lose their textures on player respawn.  
 Enemies may get stuck on the walls.  
