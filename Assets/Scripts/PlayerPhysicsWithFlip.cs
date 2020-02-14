@@ -25,6 +25,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     private int currentAnimation;//  1:Idle 2:Swim 3:Flip;
     private int AngleSection; //1 2 3 4 quarters;
     private float gameOverTimer = -500;
+    private bool gameOver = false;
     private float horizontal;
 
     public GameObject explosion;
@@ -42,7 +43,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         bTimer = 1.0f;
         player = transform.GetComponent<Rigidbody2D>();
         oxygen = transform.GetComponent<PlayerOxygen>();
-        //Application.targetFrameRate = 60;
+        Application.targetFrameRate = 60;
     }
     // Update is called once per frame
     void Update()
@@ -55,9 +56,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else
             {
-                gameOverTimer = -500;
-                RespawnMaster.Respawn();
-                
+                SceneManager.LoadScene("GameOver");
             }
         }
 
@@ -65,13 +64,18 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         // degree of left or right movement
         float horizontalPhysics = Input.GetAxis("Horizontal");
         float verticalPhysics = Input.GetAxis("Vertical");
+        if (gameOver)
+        {
+            horizontalPhysics = 0;
+            verticalPhysics = 0;
+        }
 
         //Animation Part
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
         {
             horizontal = 1;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
             horizontal = -1;
         }
@@ -399,17 +403,24 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            GameObject explosionInstance = Instantiate(explosion, transform.position, Quaternion.identity);
-            Destroy(explosionInstance, 2);
+            Instantiate(explosion, transform.position, Quaternion.identity);
             //Destroy(gameObject);
             //Destroy(gameObject);
-            collision.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
             //yield return new WaitForSeconds(2);
-            gameOverTimer = 0.4f;
+            gameOver = true;
+            gameOverTimer = 1.5f;
             //gameObject.GetComponent<PlayerOxygen>().Deth();
             //death.GetComponent<PlayerPhysicsWithFlip>().goToGameOver();
             //goToGameOver();
 
         }
     }
+
+    IEnumerator goToGameOver()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Main Menu");
+    }
+
 }
