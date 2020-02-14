@@ -5,8 +5,12 @@ using UnityEngine;
 public class EnemyKill : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float OxygenSize = 75;
+
     void Start()
     {
+        PlayerOxygen.TankAir = OxygenSize;
+        PlayerOxygen.TankSize = OxygenSize;
         
     }
 
