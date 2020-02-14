@@ -83,7 +83,6 @@ GameObject:
   - component: {fileID: 3974827010581338342}
   - component: {fileID: 3974827010581338341}
   - component: {fileID: 3974827010581338346}
-  - component: {fileID: 2766416185625997811}
   - component: {fileID: 1915660308}
   - component: {fileID: 1915660306}
   - component: {fileID: 1888218024}
@@ -214,22 +213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTimer: 1
---- !u!114 &2766416185625997811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3974827010581338337}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe48b137ac21b478188df07dfa2e4a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowstick: {fileID: 7838599215140609918, guid: 5d0c30ae4e9ad49cf9922181bb1c4292,
-    type: 3}
-  glowInstance: {fileID: 0}
-  nglow: 99
 --- !u!60 &1915660308
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -287,7 +270,6 @@ MonoBehaviour:
   glowstick: {fileID: 7838599215140609918, guid: 5d0c30ae4e9ad49cf9922181bb1c4292,
     type: 3}
   glowInstance: {fileID: 0}
-  nglow: 3
   glowNum: {fileID: 0}
 --- !u!82 &1888218024
 AudioSource:
@@ -423,7 +405,9 @@ MonoBehaviour:
   boostCost: 5
   turnSpeed: 2
   pullingBoulder: 0
+  death: {fileID: 0}
   anim: {fileID: 0}
+  explosion: {fileID: 0}
 --- !u!70 &7656363404851056156
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
