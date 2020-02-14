@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
         Idle
     }
     public Behaviour currentBehaviour = Behaviour.Idle;
-
+    public Behaviour defaultBehaviour = Behaviour.Idle;
 
     int waypointIndex;
 
