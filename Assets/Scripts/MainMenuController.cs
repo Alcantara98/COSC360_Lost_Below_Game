@@ -17,16 +17,23 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadTutorial()
     {
+        PlayerOxygen.TankAir = PlayerOxygen.TankSize;
         SceneManager.LoadScene("IntroScene");
     }
 
     public void LoadLevel1()
     {
+        PlayerCollectibles.nglow = 0;
+        PlayerCollectibles.hasKnife = false;
+        PlayerOxygen.TankAir = PlayerOxygen.TankSize;
         SceneManager.LoadScene("Level_1");
     }
 
     public void LoadLevel2()
     {
+        PlayerCollectibles.nglow = 0;
+        PlayerCollectibles.hasKnife = false;
+        PlayerOxygen.TankAir = PlayerOxygen.TankSize;
         SceneManager.LoadScene("Level_2");
     }
 
