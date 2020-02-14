@@ -20,7 +20,7 @@ public class GlowstickController : MonoBehaviour
 
     public void DropGlowstick()
     {
-        glowInstance = Instantiate(glowstick, transform.position + new Vector3(0,-0.2f,0), Quaternion.identity);
+        glowInstance = Instantiate(glowstick, transform.position + new Vector3(5,-1.2f,0), Quaternion.identity);
         nglow--;
         Destroy(glowInstance, 30);
     }
