@@ -57,8 +57,8 @@ public class PlayerOxygen : MonoBehaviour
 
         if (TankAir > 0) 
             yield break;
-        
 
-        SceneManager.LoadScene("GameOver");
+
+        RespawnMaster.Respawn();
     }
 }

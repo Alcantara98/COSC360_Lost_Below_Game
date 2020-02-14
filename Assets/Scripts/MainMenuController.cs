@@ -19,6 +19,7 @@ public class MainMenuController : MonoBehaviour
     {
         PlayerOxygen.TankAir = PlayerOxygen.TankSize;
         SceneManager.LoadScene("IntroScene");
+        RespawnMaster.playerLife = 3;
     }
 
     public void LoadLevel1()
@@ -26,6 +27,7 @@ public class MainMenuController : MonoBehaviour
         PlayerCollectibles.nglow = 0;
         PlayerCollectibles.hasKnife = false;
         PlayerOxygen.TankAir = PlayerOxygen.TankSize;
+        RespawnMaster.playerLife = 3;
         SceneManager.LoadScene("Level_1");
     }
 
@@ -34,6 +36,7 @@ public class MainMenuController : MonoBehaviour
         PlayerCollectibles.nglow = 0;
         PlayerCollectibles.hasKnife = false;
         PlayerOxygen.TankAir = PlayerOxygen.TankSize;
+        RespawnMaster.playerLife = 3;
         SceneManager.LoadScene("Level_2");
     }
 
