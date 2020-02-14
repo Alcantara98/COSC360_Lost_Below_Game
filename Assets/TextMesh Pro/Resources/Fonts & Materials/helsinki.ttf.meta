@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cdbe1a20547d6415f918f71c0c8edbcf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Helsinki
+  fontNames:
+  - Helsinki
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ef6ae43f7b6d2497a8e7fea6770e12eb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
