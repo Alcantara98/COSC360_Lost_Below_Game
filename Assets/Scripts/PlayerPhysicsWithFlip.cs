@@ -409,7 +409,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             //gameObject.GetComponent<PlayerOxygen>().Deth();
             //death.GetComponent<PlayerPhysicsWithFlip>().goToGameOver();
             //goToGameOver();
-            //SceneManager.LoadScene("GameOver");
 
         }
     }
