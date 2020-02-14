@@ -25,7 +25,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
     private int currentAnimation;//  1:Idle 2:Swim 3:Flip;
     private int AngleSection; //1 2 3 4 quarters;
     private float gameOverTimer = -500;
-    private bool gameOver = false;
     private float horizontal;
 
     public GameObject explosion;
@@ -56,7 +55,7 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("GameOver");
+                RespawnMaster.Respawn();
             }
         }
 
@@ -64,11 +63,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
         // degree of left or right movement
         float horizontalPhysics = Input.GetAxis("Horizontal");
         float verticalPhysics = Input.GetAxis("Vertical");
-        if (gameOver)
-        {
-            horizontalPhysics = 0;
-            verticalPhysics = 0;
-        }
 
         //Animation Part
         if(Input.GetKey(KeyCode.D))
@@ -408,7 +402,6 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
             //Destroy(gameObject);
             Destroy(collision.gameObject);
             //yield return new WaitForSeconds(2);
-            gameOver = true;
             gameOverTimer = 0.4f;
             //gameObject.GetComponent<PlayerOxygen>().Deth();
             //death.GetComponent<PlayerPhysicsWithFlip>().goToGameOver();
@@ -417,11 +410,4 @@ public class PlayerPhysicsWithFlip : MonoBehaviour
 
         }
     }
-
-    IEnumerator goToGameOver()
-    {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("Main Menu");
-    }
-
 }
