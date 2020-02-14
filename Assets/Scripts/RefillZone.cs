@@ -31,7 +31,7 @@ public class RefillZone : MonoBehaviour
 
     IEnumerator Refill()
     {
-        for (float currentOxygen = PlayerOxygen.TankAir; currentOxygen <= PlayerOxygen.TankSize; currentOxygen += 1f)
+        for (float currentOxygen = PlayerOxygen.TankAir; currentOxygen <= PlayerOxygen.TankSize; currentOxygen += 0.6f)
         {
             PlayerOxygen.TankAir = currentOxygen;
             yield return new WaitForSeconds(Time.deltaTime);
