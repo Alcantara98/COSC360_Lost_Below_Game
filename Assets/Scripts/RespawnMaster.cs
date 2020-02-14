@@ -79,6 +79,7 @@ public class RespawnMaster : MonoBehaviour
 
     public static void Respawn()
     {
+        Debug.Log("hi");
         //SceneManager.LoadScene(sceneName);
 
         GameObject player = GameObject.FindWithTag("Player");
