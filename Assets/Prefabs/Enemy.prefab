@@ -82,6 +82,7 @@ GameObject:
   - component: {fileID: 7182409024347563327}
   - component: {fileID: 882048749839589384}
   - component: {fileID: 5253826333109974339}
+  - component: {fileID: 2406708926565755963}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -149,6 +150,7 @@ MonoBehaviour:
   chaseSpeed: 2
   directFollow: 3
   currentBehaviour: 3
+  defaultBehaviour: 3
   startChaseRadius: 0
   stopChaseRadius: 0
 --- !u!114 &5253826333109974339
@@ -168,6 +170,21 @@ MonoBehaviour:
   turnSpeed: 5
   DrawPathInEditor: 0
   PathColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!114 &2406708926565755963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7695656988750299194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce4d51000c614e5f8fa6c948d1ae95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointLight: {fileID: 3742978389228890592}
+  skullLight: {fileID: 0}
+  enemyParent: {fileID: 0}
 --- !u!1001 &7695656989288754423
 PrefabInstance:
   m_ObjectHideFlags: 0
