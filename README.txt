@@ -17,11 +17,13 @@ Space Bar to boost
 P to pause 
  
 KNOWN ISSUES 
+General Bugs:
+FPS issues at the end of final level and beginning of tutorial.
 Uncommon bugs: 
 Glowsticks may become stuck in the diver’s torso when dropped at specific angles. 
-The player must mash F to cut vines as the colliders are buggy. 
+The player must mash F to cut vines as the colliders are buggy.
+Undesired enemy pathing when player stops 	
 Rare bugs: 
-Player may spawn outside boundaries.  
 Enemies may lose their textures on player respawn.  
 Enemies may get stuck on the walls.  
  
