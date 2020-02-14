@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3095,12 +3095,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e5377579b4848f0bf768d6f14ab997, type: 3}
---- !u!1 &482996306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4309909188598806645, guid: a4477a1a502194febb17aae255d8671a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1458582569}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &497259671
 GameObject:
   m_ObjectHideFlags: 0
@@ -6552,21 +6546,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 757500284}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1096260071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096260066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662538e026ac347408ee8f571df9220f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabRadius: 1
-  grid: {fileID: 482996306}
-  canPull: 0
 --- !u!254 &1096260072
 RelativeJoint2D:
   m_ObjectHideFlags: 0
@@ -13436,7 +13415,7 @@ PrefabInstance:
     - target: {fileID: 1915660306, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: glowstick
       value: 
-      objectReference: {fileID: 7838599215140609918, guid: 5d0c30ae4e9ad49cf9922181bb1c4292,
+      objectReference: {fileID: 4566276532886131927, guid: 6c7c59dbed11d4465b752b5963a949ba,
         type: 3}
     - target: {fileID: 1915660306, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: glowNum
