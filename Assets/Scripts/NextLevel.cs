@@ -11,6 +11,9 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            PlayerCollectibles.nglow = 0;
+            PlayerCollectibles.hasKnife = false;
+            PlayerOxygen.TankAir = PlayerOxygen.TankSize;
             SceneManager.LoadScene(LevelToLoad);
         }
         //SceneManager.LoadScene("Level2", LoadSceneMode.Single);

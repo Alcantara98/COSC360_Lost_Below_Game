@@ -12,7 +12,7 @@ public class PlayerCollectibles : MonoBehaviour
     public GameObject glowInstance;
 
     //number of glowsticks
-    public static int nglow = 3;
+    public static int nglow = 0;
 
     public TextMeshProUGUI glowNum;
 
