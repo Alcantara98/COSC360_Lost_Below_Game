@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyKill : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float OxygenSize = 75;
+    public float OxygenSize = 95;
 
     void Start()
     {
