@@ -10325,7 +10325,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: startChaseRadius
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -15844,6 +15844,11 @@ PrefabInstance:
       propertyPath: speed
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 1888218026, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 5309657299771909547, guid: abf7fa01363f546d3a87df3990fa6e8a,
+        type: 3}
     - target: {fileID: 1915660307, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -15997,7 +16002,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.75
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3974827010581338342, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f1a6b44d6472942418e0f31929bd195f, type: 3}
 --- !u!1 &771921327
 GameObject:
@@ -18364,7 +18370,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: startChaseRadius
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -23471,7 +23477,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: startChaseRadius
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -29813,7 +29819,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: startChaseRadius
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -31698,7 +31704,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: startChaseRadius
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}

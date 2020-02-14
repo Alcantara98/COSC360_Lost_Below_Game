@@ -48799,7 +48799,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: chaseSpeed
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
