@@ -84,6 +84,9 @@ public class RespawnMaster : MonoBehaviour
 
         GameObject player = GameObject.FindWithTag("Player");
         player.transform.position = playerPos;
+        PlayerCollectibles.nglow = playerNGlow;
+        PlayerOxygen.TankAir = PlayerOxygen.TankSize;
+        PlayerCollectibles.hasKnife = playerHasKnife;
 
         Debug.Log("re");
 
