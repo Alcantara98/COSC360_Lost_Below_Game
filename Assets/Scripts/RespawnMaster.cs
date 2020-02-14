@@ -15,6 +15,7 @@ public class RespawnMaster : MonoBehaviour
     public static Vector3[] oriBoulder;
     public static Vector3[] oriEnemy;
     public static Vector3[] oriCurrent;
+    public static Quaternion[] oriEnemyRotation;
     public static GameObject[] checkKnife;
     public static GameObject[] checkVine;
     public static GameObject[] checkGlow;
@@ -46,10 +47,13 @@ public class RespawnMaster : MonoBehaviour
         if (originalEnemy != null)
         {
             oriEnemy = new Vector3[originalEnemy.Length];
+            oriEnemyRotation = new Quaternion[originalEnemy.Length];
             for (int i = 0; i < originalEnemy.Length; i++)
             {
                 oriEnemy[i] = originalEnemy[i].transform.position;
+                oriEnemyRotation[i] = originalEnemy[i].transform.rotation;
             }
+
         }
         if (originalCurrent != null)
         {
@@ -125,6 +129,7 @@ public class RespawnMaster : MonoBehaviour
             for (int i = 0; i < originalEnemy.Length; i++)
             {
                 originalEnemy[i].transform.position = oriEnemy[i];
+                originalEnemy[i].transform.rotation = oriEnemyRotation[i];
                 originalEnemy[i].SetActive(true);
                 originalEnemy[i].GetComponent<EnemyController>().currentBehaviour = EnemyController.Behaviour.Idle;
                     //originalEnemy[i].GetComponent<EnemyController>().defaultBehaviour;

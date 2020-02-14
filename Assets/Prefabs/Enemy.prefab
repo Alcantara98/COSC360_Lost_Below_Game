@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5105904827936836548}
   - component: {fileID: 5323753669575780116}
+  - component: {fileID: 3982089189019346469}
   m_Layer: 0
   m_Name: Freeform Light 2D
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7695656988750299197}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5323753669575780116
 MonoBehaviour:
@@ -80,6 +81,18 @@ MonoBehaviour:
   - {x: -0.086462736, y: 1.3421518, z: 0}
   - {x: -0.5042821, y: 1.3211355, z: 0}
   - {x: -1.0667965, y: 1.2668422, z: 0}
+--- !u!114 &3982089189019346469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4417565115338825231}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be30ca97e96054219b30f98e109423b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7695656988750299194
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,8 +124,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5432731910547621896}
   - {fileID: 5105904827936836548}
+  - {fileID: 5432731910547621896}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -283,7 +296,7 @@ PrefabInstance:
     - target: {fileID: 2425337527848150271, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2425337527848150271, guid: c2c2960506aeb4bc4acb9b17fd964206,
         type: 3}
