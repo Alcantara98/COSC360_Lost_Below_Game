@@ -18,8 +18,7 @@ public class HeartBeatSound : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        Application.targetFrameRate = 1;
+    { 
         audioSource.GetComponents<AudioSource>();
         //audioSource.PlayOneShot(heartBeat_Whole, 1);
         timePassed = 0.5f;
