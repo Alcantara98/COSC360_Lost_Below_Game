@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -730,11 +730,11 @@ EdgeCollider2D:
   - {x: 100.42807, y: 17.669758}
   - {x: 100.77216, y: 19.000673}
   - {x: 101.198524, y: 20.676025}
-  - {x: 101.97384, y: 21.72939}
-  - {x: 104.84562, y: 22.650251}
-  - {x: 109.54833, y: 23.123976}
-  - {x: 113.58017, y: 22.933561}
-  - {x: 116.540504, y: 22.257648}
+  - {x: 101.90678, y: 21.617615}
+  - {x: 104.86797, y: 22.359634}
+  - {x: 109.48127, y: 22.788647}
+  - {x: 113.5131, y: 22.665298}
+  - {x: 116.62993, y: 22.123518}
   - {x: 117.492546, y: 20.851698}
   - {x: 118.17139, y: 19.139389}
   - {x: 118.248535, y: 17.225197}
@@ -909,6 +909,10 @@ EdgeCollider2D:
   - {x: -81.40426, y: -87.11438}
   - {x: -80.968575, y: -85.37158}
   - {x: -80.54463, y: -83.32995}
+  - {x: -79.16242, y: -82.36262}
+  - {x: -75.685776, y: -81.84349}
+  - {x: -70.7706, y: -81.81865}
+  - {x: -66.97975, y: -82.12923}
   - {x: -64.30461, y: -83.228516}
   - {x: -64.11688, y: -85.86519}
   - {x: -62.983917, y: -87.61394}
@@ -48833,7 +48837,7 @@ PrefabInstance:
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
       propertyPath: startChaseRadius
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 882048749839589384, guid: 742233bffe6ba41c8ad01c442d83ef75,
         type: 3}
@@ -51777,12 +51781,12 @@ PrefabInstance:
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.05
+      value: 103.55
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.58
+      value: 9.97
       objectReference: {fileID: 0}
     - target: {fileID: 3974827010581338340, guid: f1a6b44d6472942418e0f31929bd195f,
         type: 3}
